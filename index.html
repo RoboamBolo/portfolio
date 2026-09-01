@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roboam Bolossilia — Full-Stack Developer &amp; Digital Solutions Architect</title>
+<meta name="description" content="Roboam Bolossilia conçoit et développe des solutions numériques — applications web, mobiles et systèmes métiers — pensées pour résoudre des problèmes réels, à Bangui, République centrafricaine.">
+<meta name="theme-color" content="#0a0b0d">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roboam Bolossilia — Full-Stack Developer & Digital Solutions Architect">
+<meta property="og:description" content="Je transforme des problèmes réels en solutions numériques fiables, structurées et évolutives.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roboam Bolossilia — Full-Stack Developer & Digital Solutions Architect">
+<meta name="twitter:description" content="Je transforme des problèmes réels en solutions numériques fiables, structurées et évolutives.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Roboam Bolossilia",
+  "jobTitle": "Full-Stack Developer & Digital Solutions Architect",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangui",
+    "addressCountry": "CF"
+  }
+}
+</script>
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="site-header">
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#hero" class="nav__brand">RB<span class="nav__brand-dot">.</span></a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav__menu" id="navMenu">
+      <ul class="nav__links">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#methodology">Méthode</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer entre mode sombre et mode clair">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn--sm btn--primary">Discuter d'un projet</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+    <div class="hero__content wrap">
+      <p class="hero__location">
+        <span class="dot-live" aria-hidden="true"></span>
+        Bangui, République centrafricaine
+      </p>
+
+      <div class="hero__top">
+        <h1 class="hero__name">Roboam<br>Bolossilia</h1>
+
+        <div class="hero__portrait" id="heroPortrait">
+          <img src="assets/images/portrait.jpg" alt="Portrait de Roboam Bolossilia"
+               id="heroPortraitImg"
+               onerror="this.style.display='none'; document.getElementById('heroPortraitFallback').style.display='flex';">
+          <div class="hero__portrait-fallback" id="heroPortraitFallback" aria-hidden="true">RB</div>
+        </div>
+      </div>
+
+      <p class="hero__title">
+        Full-Stack Developer <span class="hero__title-amp">&amp;</span> Digital Solutions Architect
+      </p>
+
+      <p class="hero__pitch">
+        Je conçois et développe des solutions numériques qui transforment des besoins
+        complexes en systèmes fiables, sécurisés et évolutifs.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Explorer mes projets</a>
+        <a href="#contact" class="btn btn--ghost">Discuter d'un projet</a>
+        <a href="assets/docs/cv-roboam-bolossilia.pdf" download class="btn btn--text" id="cvLink">Télécharger mon CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <div class="trust-strip" aria-label="Domaines de compétence">
+      <div class="trust-strip__track">
+        <span>Web</span><span class="sep">•</span>
+        <span>Mobile</span><span class="sep">•</span>
+        <span>Backend</span><span class="sep">•</span>
+        <span>API</span><span class="sep">•</span>
+        <span>Architecture</span><span class="sep">•</span>
+        <span>Offline</span><span class="sep">•</span>
+        <span>Sécurité</span><span class="sep">•</span>
+        <span>Web</span><span class="sep">•</span>
+        <span>Mobile</span><span class="sep">•</span>
+        <span>Backend</span><span class="sep">•</span>
+        <span>API</span><span class="sep">•</span>
+        <span>Architecture</span><span class="sep">•</span>
+        <span>Offline</span><span class="sep">•</span>
+        <span>Sécurité</span><span class="sep">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__lead reveal">
+          <p class="eyebrow">Profil</p>
+          <h2 class="h2">Je ne développe pas seulement des applications.<br>Je construis des solutions.</h2>
+        </div>
+        <div class="split__body reveal">
+          <p class="lead-text">
+            Mon approche part toujours du problème métier avant de choisir la technologie.
+            Une interface convaincante ne suffit pas si le système qui la fait fonctionner
+            n'est pas pensé pour durer.
+          </p>
+          <p class="p-text">
+            Avant d'écrire la première ligne de code, je cherche à comprendre qui utilisera
+            le système, dans quelles conditions, avec quelles contraintes — connectivité,
+            volume de données, niveau de sécurité requis — puis je conçois une architecture
+            capable d'y répondre dans la durée.
+          </p>
+
+          <ol class="process-list">
+            <li><span class="process-list__num">01</span><span>Analyse</span></li>
+            <li><span class="process-list__num">02</span><span>Conception</span></li>
+            <li><span class="process-list__num">03</span><span>Architecture</span></li>
+            <li><span class="process-list__num">04</span><span>Développement</span></li>
+            <li><span class="process-list__num">05</span><span>Tests &amp; sécurité</span></li>
+            <li><span class="process-list__num">06</span><span>Déploiement</span></li>
+            <li><span class="process-list__num">07</span><span>Évolution</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHY ============ -->
+  <section class="section section--dark" id="philosophy">
+    <div class="wrap wrap--narrow">
+      <blockquote class="quote reveal">
+        <p>« Une bonne application ne se mesure pas uniquement à son interface, mais à la
+        qualité du système qui se trouve derrière. »</p>
+      </blockquote>
+      <div class="philosophy-tags reveal">
+        <span>Architecture propre</span>
+        <span>Code maintenable</span>
+        <span>Sécurité</span>
+        <span>Performance</span>
+        <span>Expérience utilisateur</span>
+        <span>Évolutivité</span>
+        <span>Fiabilité</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <p class="eyebrow reveal">Compétences</p>
+      <h2 class="h2 reveal">Les technologies, et le rôle qu'elles jouent<br>dans une architecture.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4.5" width="18" height="15" rx="1.6"/>
+            <path d="M3 8.5h18"/>
+            <path d="M6.5 6.3h.01M9 6.3h.01"/>
+          </svg>
+          <h3>Front-end</h3>
+          <p class="skill-card__role">Ce que l'utilisateur voit et manipule.</p>
+          <ul>
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Tailwind CSS</li><li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="6.5" rx="1.4"/>
+            <rect x="3" y="13.5" width="18" height="6.5" rx="1.4"/>
+            <path d="M6.5 7.25h.01M6.5 16.75h.01"/>
+          </svg>
+          <h3>Back-end</h3>
+          <p class="skill-card__role">La logique métier et les règles du système.</p>
+          <ul>
+            <li>PHP</li><li>Laravel</li><li>CodeIgniter 4</li><li>Node.js</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="7" y="2.5" width="10" height="19" rx="1.8"/>
+            <path d="M11 18.2h2"/>
+          </svg>
+          <h3>Mobile</h3>
+          <p class="skill-card__role">L'accès au système en mobilité, y compris hors ligne.</p>
+          <ul>
+            <li>Flutter</li><li>Dart</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <ellipse cx="12" cy="5.5" rx="8" ry="3"/>
+            <path d="M4 5.5v6.5c0 1.66 3.58 3 8 3s8-1.34 8-3V5.5"/>
+            <path d="M4 12v6.5c0 1.66 3.58 3 8 3s8-1.34 8-3V12"/>
+          </svg>
+          <h3>Données</h3>
+          <p class="skill-card__role">Le stockage et l'intégrité de l'information.</p>
+          <ul>
+            <li>MySQL</li><li>PostgreSQL</li><li>SQLite</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/>
+            <path d="M3 12 12 16.5 21 12"/>
+            <path d="M3 16.5 12 21l9-4.5"/>
+          </svg>
+          <h3>Architecture</h3>
+          <p class="skill-card__role">La structure qui rend le système fiable et évolutif.</p>
+          <ul>
+            <li>MVC</li><li>REST API</li><li>Architecture modulaire</li><li>DDD</li><li>Offline-first</li><li>Synchronisation</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <svg class="skill-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3 17.7 3.3l3 3-3 3-2-.7"/>
+            <path d="M14.7 6.3 4.5 16.5a2 2 0 0 0 0 2.8v0a2 2 0 0 0 2.8 0L17.7 9.1"/>
+            <path d="m8 13-3 3"/>
+          </svg>
+          <h3>Outils</h3>
+          <p class="skill-card__role">L'environnement de travail et de collaboration.</p>
+          <ul>
+            <li>Git</li><li>GitHub</li><li>Linux</li><li>Composer</li><li>npm</li><li>VS Code / Zed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARCHITECTURE (signature section) ============ -->
+  <section class="section section--dark" id="architecture">
+    <div class="wrap">
+      <p class="eyebrow reveal">Architecture</p>
+      <h2 class="h2 reveal">Derrière chaque interface,<br>il y a une architecture.</h2>
+      <p class="lead-text reveal" style="max-width:46ch">
+        Chaque système que je construis suit un même principe : séparer clairement ce que
+        l'utilisateur voit, ce qui décide, et ce qui est conservé — pour que chaque couche
+        puisse évoluer sans casser les autres.
+      </p>
+
+      <div class="arch-diagram reveal" id="archDiagram">
+        <svg viewBox="0 0 900 620" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Schéma d'architecture logicielle : Utilisateur, Front-end, API REST, Back-end, Logique métier et Sécurité, Base de données">
+          <!-- connecting lines -->
+          <g class="arch-lines">
+            <path class="arch-line" data-step="1" d="M450,60 L450,120"/>
+            <path class="arch-line" data-step="2" d="M450,180 L450,240"/>
+            <path class="arch-line" data-step="3" d="M450,300 L450,360"/>
+            <path class="arch-line" data-step="4" d="M450,360 L330,420"/>
+            <path class="arch-line" data-step="4" d="M450,360 L570,420"/>
+            <path class="arch-line" data-step="5" d="M330,480 L450,540"/>
+          </g>
+
+          <!-- nodes -->
+          <g class="arch-node" data-step="0" transform="translate(450,40)">
+            <text text-anchor="middle" class="arch-node__label" y="6">UTILISATEUR</text>
+          </g>
+
+          <g class="arch-node arch-node--box" data-step="1" transform="translate(450,150)">
+            <rect x="-110" y="-30" width="220" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">FRONT-END</text>
+          </g>
+
+          <g class="arch-node arch-node--box" data-step="2" transform="translate(450,270)">
+            <rect x="-110" y="-30" width="220" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">REST API</text>
+          </g>
+
+          <g class="arch-node arch-node--box" data-step="3" transform="translate(450,390)">
+            <rect x="-110" y="-30" width="220" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">BACK-END</text>
+          </g>
+
+          <g class="arch-node arch-node--box arch-node--accent" data-step="4" transform="translate(330,450)">
+            <rect x="-115" y="-30" width="230" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">BUSINESS LOGIC</text>
+          </g>
+
+          <g class="arch-node arch-node--box arch-node--accent" data-step="4" transform="translate(570,450)">
+            <rect x="-95" y="-30" width="190" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">SECURITY</text>
+          </g>
+
+          <g class="arch-node arch-node--box" data-step="5" transform="translate(450,570)">
+            <rect x="-110" y="-30" width="220" height="60" rx="4"/>
+            <text text-anchor="middle" y="6" class="arch-node__title">DATABASE</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="eyebrow reveal">Projets</p>
+      <h2 class="h2 reveal">Des idées transformées en systèmes.</h2>
+
+      <!-- SIFGC -->
+      <article class="case-study reveal">
+        <div class="case-study__head">
+          <div>
+            <p class="case-study__eyebrow">Système métier — Gestion &amp; comptabilité</p>
+            <h3>SIFGC — Système Intégré de Facturation et de Gestion Comptable</h3>
+          </div>
+          <span class="status-pill" data-status="tbd">Statut à confirmer</span>
+        </div>
+        <div class="case-study__grid">
+          <div>
+            <h4>Contexte</h4>
+            <p>Les organisations qui facturent et suivent leur comptabilité manuellement perdent
+            en traçabilité et en fiabilité à mesure que leur activité grandit.</p>
+            <h4>Problème</h4>
+            <p>Centraliser la facturation, la TVA et le suivi comptable dans un seul système,
+            avec des accès différenciés selon les rôles.</p>
+            <h4>Solution</h4>
+            <p>Une plateforme de facturation et de gestion comptable structurée autour des
+            clients, des factures, des rapports et des utilisateurs, avec traçabilité des
+            actions sensibles.</p>
+          </div>
+          <div>
+            <h4>Fonctionnalités clés</h4>
+            <ul class="check-list">
+              <li>Gestion des clients</li>
+              <li>Facturation &amp; TVA</li>
+              <li>Suivi comptable &amp; rapports</li>
+              <li>Utilisateurs &amp; rôles</li>
+              <li>Traçabilité des actions</li>
+            </ul>
+            <h4>Technologies</h4>
+            <div class="tag-row">
+              <span>PHP</span><span>Laravel / CodeIgniter</span><span>MySQL</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SINA-RCA -->
+      <article class="case-study reveal">
+        <div class="case-study__head">
+          <div>
+            <p class="case-study__eyebrow">Transformation numérique — Secteur agricole</p>
+            <h3>SINA-RCA — Système d'Information Numérique Agricole</h3>
+          </div>
+          <span class="status-pill" data-status="tbd">Statut à confirmer</span>
+        </div>
+        <div class="case-study__grid">
+          <div>
+            <h4>Contexte</h4>
+            <p>La collecte de données agricoles sur le terrain se heurte souvent à une
+            connectivité limitée, ce qui freine la remontée d'information fiable.</p>
+            <h4>Problème</h4>
+            <p>Permettre aux agents et producteurs de collecter et consulter des données
+            agricoles même sans connexion, avec une synchronisation fiable au retour du réseau.</p>
+            <h4>Solution</h4>
+            <p>Un système combinant application mobile, API et plateforme web, conçu
+            offline-first : les données sont saisies localement puis synchronisées.</p>
+          </div>
+          <div>
+            <h4>Fonctionnalités clés</h4>
+            <ul class="check-list">
+              <li>Fonctionnement hors ligne</li>
+              <li>Synchronisation des données</li>
+              <li>Calendrier agricole</li>
+              <li>Suivi des agents &amp; producteurs</li>
+              <li>Collecte de données terrain</li>
+            </ul>
+            <h4>Technologies</h4>
+            <div class="tag-row">
+              <span>Flutter</span><span>Laravel</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+            <h4>Architecture</h4>
+            <p class="mini-arch">Mobile (local) → Sync → API → Web → PostgreSQL</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- SNICGTM -->
+      <article class="case-study reveal">
+        <div class="case-study__head">
+          <div>
+            <p class="case-study__eyebrow">Digitalisation — Identification &amp; contrôle</p>
+            <h3>SNICGTM — Système National d'Identification, de Contrôle et de Gestion des Taxi-Motos</h3>
+          </div>
+          <span class="status-pill" data-status="tbd">Statut à confirmer</span>
+        </div>
+        <div class="case-study__grid">
+          <div>
+            <h4>Contexte</h4>
+            <p>Le contrôle et l'identification des taxi-motos reposent souvent sur des
+            registres papier, difficiles à vérifier et à sécuriser.</p>
+            <h4>Problème</h4>
+            <p>Centraliser l'identification des conducteurs, propriétaires et véhicules, et
+            rendre le contrôle vérifiable sur le terrain.</p>
+            <h4>Solution</h4>
+            <p>Un système d'identification par QR Code associé à un dossier numérique complet
+            du conducteur, du propriétaire et du véhicule, consultable lors des contrôles.</p>
+          </div>
+          <div>
+            <h4>Fonctionnalités clés</h4>
+            <ul class="check-list">
+              <li>Identification conducteur / propriétaire / véhicule</li>
+              <li>QR Code de contrôle</li>
+              <li>Historique &amp; traçabilité</li>
+              <li>Gestion administrative</li>
+            </ul>
+            <h4>Technologies</h4>
+            <div class="tag-row">
+              <span>PHP</span><span>Laravel</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Authentification faciale -->
+      <article class="case-study reveal">
+        <div class="case-study__head">
+          <div>
+            <p class="case-study__eyebrow">Sécurité — Security by Design</p>
+            <h3>Authentification faciale</h3>
+          </div>
+          <span class="status-pill" data-status="tbd">Statut à confirmer</span>
+        </div>
+        <div class="case-study__grid">
+          <div>
+            <h4>Contexte</h4>
+            <p>Les systèmes d'authentification classiques (mot de passe seul) restent
+            vulnérables et offrent peu de visibilité sur les tentatives d'accès.</p>
+            <h4>Problème</h4>
+            <p>Vérifier l'identité d'un utilisateur via la caméra, tout en gardant une trace
+            fiable des tentatives et en réagissant aux comportements suspects.</p>
+            <h4>Solution</h4>
+            <p>Un module d'authentification faciale intégrant vérification, journalisation des
+            événements de sécurité et blocage après tentatives répétées.</p>
+          </div>
+          <div>
+            <h4>Fonctionnalités clés</h4>
+            <ul class="check-list">
+              <li>Vérification par caméra</li>
+              <li>Journalisation des tentatives</li>
+              <li>Détection &amp; blocage</li>
+              <li>Événements de sécurité</li>
+            </ul>
+            <h4>Technologies</h4>
+            <div class="tag-row">
+              <span>CodeIgniter 4</span><span>PHP</span><span>JavaScript</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- IST Bangui -->
+      <article class="case-study reveal">
+        <div class="case-study__head">
+          <div>
+            <p class="case-study__eyebrow">Solution numérique — Éducation</p>
+            <h3>IST Bangui — Plateforme numérique académique</h3>
+          </div>
+          <span class="status-pill" data-status="tbd">Statut à confirmer</span>
+        </div>
+        <div class="case-study__grid">
+          <div>
+            <h4>Contexte</h4>
+            <p>Les étudiants ont besoin d'un accès simple et fiable aux cours, au calendrier
+            des examens et aux ressources, même en cas de connexion instable.</p>
+            <h4>Problème</h4>
+            <p>Centraliser les informations académiques et permettre leur consultation hors
+            ligne une fois synchronisées.</p>
+            <h4>Solution</h4>
+            <p>Une plateforme regroupant cours, calendrier d'examens et téléchargements, avec
+            fonctionnement offline et synchronisation.</p>
+          </div>
+          <div>
+            <h4>Fonctionnalités clés</h4>
+            <ul class="check-list">
+              <li>Cours &amp; ressources</li>
+              <li>Calendrier des examens</li>
+              <li>Téléchargements</li>
+              <li>Fonctionnement hors ligne</li>
+            </ul>
+            <h4>Technologies</h4>
+            <div class="tag-row">
+              <span>Flutter</span><span>Laravel</span><span>SQLite</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ OFFLINE-FIRST ============ -->
+  <section class="section section--dark" id="offline">
+    <div class="wrap split">
+      <div class="split__lead reveal">
+        <p class="eyebrow">Offline-first</p>
+        <h2 class="h2">Même sans Internet,<br>le système continue de fonctionner.</h2>
+        <p class="lead-text">
+          Une connectivité stable n'est pas toujours garantie. Les systèmes que je conçois
+          pour des contextes réels — terrain, mobilité, zones peu couvertes — gardent des
+          données locales et se synchronisent dès que le réseau revient, sans perte
+          d'information.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="offline-flow">
+          <div class="offline-flow__node offline-flow__node--online">En ligne</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node">Synchronisation</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node">Base locale</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node offline-flow__node--offline">Hors ligne</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node">Travail continu</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node">Connexion retrouvée</div>
+          <div class="offline-flow__arrow"></div>
+          <div class="offline-flow__node offline-flow__node--online">Synchronisation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY ============ -->
+  <section class="section" id="security">
+    <div class="wrap">
+      <p class="eyebrow reveal">Sécurité</p>
+      <h2 class="h2 reveal">La sécurité n'est pas une fonctionnalité.<br>C'est une fondation.</h2>
+      <p class="lead-text reveal" style="max-width:52ch">
+        Ces principes guident la façon dont je conçois un système. Leur mise en œuvre
+        précise dépend toujours du contexte et des exigences réelles du projet.
+      </p>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal"><h3>Authentification</h3><p>Vérifier de façon fiable qui accède au système.</p></div>
+        <div class="pillar-card reveal"><h3>Autorisations &amp; rôles</h3><p>Limiter chaque accès à ce qui est réellement nécessaire.</p></div>
+        <div class="pillar-card reveal"><h3>Validation des données</h3><p>Ne jamais faire confiance aveuglément à une entrée utilisateur.</p></div>
+        <div class="pillar-card reveal"><h3>Journalisation</h3><p>Garder une trace fiable des actions sensibles.</p></div>
+        <div class="pillar-card reveal"><h3>Protection des données</h3><p>Traiter les informations sensibles avec rigueur.</p></div>
+        <div class="pillar-card reveal"><h3>Gestion des sessions</h3><p>Limiter la fenêtre d'exposition en cas de compromission.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METHODOLOGY ============ -->
+  <section class="section section--dark" id="methodology">
+    <div class="wrap">
+      <p class="eyebrow reveal">Méthodologie</p>
+      <h2 class="h2 reveal">De l'idée au système.</h2>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal"><span class="timeline__num">01</span><div><h3>Comprendre</h3><p>Identifier le problème réel à résoudre.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">02</span><div><h3>Analyser</h3><p>Comprendre les utilisateurs et les contraintes.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">03</span><div><h3>Concevoir</h3><p>UX/UI, modèle de données, architecture.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">04</span><div><h3>Développer</h3><p>Construire la solution étape par étape.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">05</span><div><h3>Tester</h3><p>Fiabilité, sécurité et performance.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">06</span><div><h3>Déployer</h3><p>Mettre le système en production.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">07</span><div><h3>Faire évoluer</h3><p>Maintenance et amélioration continue.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <p class="eyebrow reveal">Domaines d'intervention</p>
+      <h2 class="h2 reveal">Ce que je peux construire.</h2>
+      <div class="capability-grid">
+        <div class="capability-card reveal"><h3>Applications web</h3><p>Applications métiers et plateformes web pensées pour des usages réels.</p></div>
+        <div class="capability-card reveal"><h3>Applications mobiles</h3><p>Applications Android / iOS développées avec Flutter.</p></div>
+        <div class="capability-card reveal"><h3>Systèmes métiers</h3><p>Solutions adaptées aux processus réels des organisations.</p></div>
+        <div class="capability-card reveal"><h3>API &amp; Backend</h3><p>Services backend robustes, structurés et documentés.</p></div>
+        <div class="capability-card reveal"><h3>Digitalisation</h3><p>Transformation de processus manuels en solutions numériques.</p></div>
+        <div class="capability-card reveal"><h3>Offline-first</h3><p>Systèmes capables de fonctionner avec une connectivité limitée.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCOURS ============ -->
+  <section class="section section--dark" id="parcours">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow reveal">Parcours</p>
+      <h2 class="h2 reveal">Formation &amp; expérience.</h2>
+      <ul class="path-list">
+        <li class="reveal">
+          <span class="path-list__date">2021 — 2025</span>
+          <div>
+            <h3>Licence Professionnelle en Informatique de Gestion</h3>
+            <p>Institut Supérieur de Technologie (IST) — Bangui, RCA</p>
+            <p>Formation pluridisciplinaire couvrant les réseaux informatiques, le développement, la bases de données et la gestion d'entreprise. Option Informatique de Gestion.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="path-list__date">2026</span>
+          <div>
+            <h3>Stage académique — Développeur Full-Stack</h3>
+            <p>RcaSoft — Bangui, RCA</p>
+            <p>Conception et développement de solutions logicielles pour la gestion d'entreprise. Participation à des projets de digitalisation et d'architecture logicielle. <br> Thème: Conception et Réalisation d'une application Web de gestion de Rendez-vous Médicaux</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="path-list__date">2026 — Présent</span>
+          <div>
+            <h3>Développeur Full-Stack &amp; Architecte Solutions</h3>
+            <p>RcaSoft — Bangui, RCA</p>
+            <p>Conception et développement d'applications web, mobiles et de systèmes métiers. Spécialisation dans les architectures offline-first, la sécurité et la digitalisation des processus.</p>
+            <p><strong>Projets clés :</strong> SIFGC (Gestion comptable), SINA-RCA (Système Agricole), SNICGTM (Identification Taxi-Motos), Authentification faciale, Gestion de Marché. Projet de Gouvernance Numérique du Secteur Public (PGNSP) dans le domaine du Réseau Informatique</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="path-list__date">En cours</span>
+          <div>
+            <h3>Certifications Cisco — Réseaux &amp; Cybersécurité</h3>
+            <p>Cisco Networking Academy</p>
+            <p>Poursuite de certifications en réseaux informatiques et cybersécurité pour renforcer les compétences en infrastructure et sécurité des systèmes.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="cert-roadmap reveal">
+        <h3 class="cert-roadmap__title">Feuille de route — Certifications visées</h3>
+        <p class="cert-roadmap__note">Certifications identifiées pour renforcer mon profil en sécurité et en développement. Aucune n'est obtenue à ce jour — classées par ordre de priorité.</p>
+        <div class="cert-table-wrap">
+          <table class="cert-table">
+            <thead>
+              <tr>
+                <th>Priorité</th>
+                <th>Certification</th>
+                <th>Pourquoi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cert-table__priority">01</td>
+                <td>ISC2 — Certified in Cybersecurity (CC)</td>
+                <td>Totalement gratuite — très reconnue dans le secteur</td>
+              </tr>
+              <tr>
+                <td class="cert-table__priority">02</td>
+                <td>freeCodeCamp — Full Stack Developer</td>
+                <td>Gratuit, très complet, projets concrets pour le portfolio</td>
+              </tr>
+              <tr>
+                <td class="cert-table__priority">03</td>
+                <td>Cisco — Cybersecurity Essentials</td>
+                <td>Complète les certifications Cisco en cours</td>
+              </tr>
+              <tr>
+                <td class="cert-table__priority">04</td>
+                <td>Fortinet — NSE 1-3</td>
+                <td>Reconnaissance en sécurité réseau, 100% gratuit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY TRUST ============ -->
+  <section class="section" id="trust">
+    <div class="wrap">
+      <p class="eyebrow reveal">Pourquoi me faire confiance</p>
+      <h2 class="h2 reveal">Une approche orientée système.</h2>
+      <div class="pillars-grid pillars-grid--four">
+        <div class="pillar-card reveal"><h3>Architecture</h3><p>Construire sur des fondations solides.</p></div>
+        <div class="pillar-card reveal"><h3>Fiabilité</h3><p>Penser aux cas réels et aux contraintes du terrain.</p></div>
+        <div class="pillar-card reveal"><h3>Sécurité</h3><p>Intégrer la sécurité dès la conception.</p></div>
+        <div class="pillar-card reveal"><h3>Évolutivité</h3><p>Construire des solutions capables d'évoluer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section--dark" id="gallery">
+    <div class="wrap">
+      <p class="eyebrow reveal">Galerie</p>
+      <h2 class="h2 reveal">Quelques-uns de mes travaux visuels.</h2>
+      <p class="lead-text reveal" style="max-width:52ch">
+        Une sélection d'images illustrant mes projets, mes interfaces et mes réalisations.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Remplacez les src par vos propres images -->
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet1.jpg" alt="Capture d'écran du projet SIFGC" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet2.jpg" alt="Capture d'écran du projet SINA-RCA" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+            
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet3.jpg" alt="Capture d'écran du projet SNICGTM" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+             
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet4.jpg" alt="Capture d'écran de l'authentification faciale" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+            
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet5.jpg" alt="Capture d'écran de la plateforme IST Bangui" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+            
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="assets/gallery/projet6.jpg" alt="Capture d'écran de l'architecture logicielle" loading="lazy" onerror="this.closest('.gallery-item').classList.add('is-missing')">
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Architecture</span>
+            <p class="gallery-item__desc">Schéma d'architecture des systèmes</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="gallery-note reveal" style="text-align:center; margin-top: 2rem; opacity:0.7; font-size:0.85rem;">
+        📸 Ajoutez vos propres images dans le dossier <code>assets/gallery/</code>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--dark" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="h2">Vous avez un problème à résoudre ?</h2>
+          <p class="lead-text">
+            Parlons de votre idée, de votre projet ou du problème numérique que vous
+            souhaitez résoudre.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6.5 8 6.2 8-6.2"/></svg>
+              <span>Email</span>
+              <a href="mailto:bolo17robo@gmail.com">bolo17robo@gmail.com</a>
+            </li>
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1.4 1.4 0 0 1 1.5-.3c1 .3 2.1.5 3.2.5.8 0 1.4.6 1.4 1.4V20a1.4 1.4 0 0 1-1.4 1.4C10.7 21.4 2.6 13.3 2.6 3.9A1.4 1.4 0 0 1 4 2.5h3.2c.8 0 1.4.6 1.4 1.4 0 1.1.2 2.2.5 3.2.1.5 0 1.1-.3 1.5L6.6 10.8Z"/></svg>
+              <span>Téléphone</span>
+              <a href="tel:+23672118314">+236 72 11 83 14 / 70 96 88 58</a>
+            </li>
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 21v-3.1c0-.9.3-1.5.7-1.8-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C23.3 3 24.3 3.3 24.3 3.3"/></svg>
+              <span>GitHub</span>
+              <a href="https://github.com/RoboamBolo" target="_blank" rel="noopener noreferrer">@RoboamBolo</a>
+            </li>
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M7.5 10.5v6M7.5 7.5h.01M12 16.5v-4c0-1.4 1-2.5 2.5-2.5S17 11 17 12.5v4"/></svg>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/bolo17robo" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                @bolo17robo
+              </a>
+            </li>
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 8.5h-2c-.8 0-1.5.7-1.5 1.5v2h3.5l-.5 3H11.5V21h-3v-6H6v-3h2.5v-2.3C8.5 7 10.2 5 12.8 5H15v3.5Z"/></svg>
+              <span>Facebook</span>
+              <a href="#" target="_blank" rel="noopener noreferrer">l'ingénieur Roboam le Stoïcien</a>
+            </li>
+            <li>
+              <svg class="contact-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+              <span>Localisation</span>
+              <span>Bangui, République centrafricaine</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" 
+              id="contactForm" 
+              action="https://formspree.io/f/xzebdlrd" 
+              method="POST">
+          <div class="field">
+            <label for="cf-name">Nom</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cf-subject">Sujet</label>
+            <input type="text" id="cf-subject" name="subject">
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Envoyer le message</button>
+          <p class="field-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <p class="footer__name">Roboam Bolossilia</p>
+      <p class="footer__title">Full-Stack Developer &amp; Digital Solutions Architect</p>
+    </div>
+    <p class="footer__tagline">Construire. Sécuriser. Faire évoluer.</p>
+    <p class="footer__copy">© 2026 Roboam Bolossilia.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
