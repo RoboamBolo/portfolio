@@ -1,0 +1,331 @@
+backend:
+  name: github
+  repo: VOTRE-USERNAME/VOTRE-REPO
+  branch: main
+  site_domain: VOTRE-SITE.netlify.app
+
+media_folder: "gallery"
+public_folder: "/gallery"
+
+collections:
+  - name: "content"
+    label: "Contenu du Portfolio"
+    editor:
+      preview: true
+    files:
+      - name: "translations"
+        label: "Traductions"
+        file: "data/content.json"
+        fields:
+          - name: "en"
+            label: "🇬🇧 English"
+            widget: "object"
+            fields:
+              - name: "site"
+                label: "Site"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - name: "nav"
+                    label: "Navigation"
+                    widget: "object"
+                    fields:
+                      - { name: "home", label: "Accueil", widget: "string" }
+                      - { name: "projects", label: "Projets", widget: "string" }
+                      - { name: "about", label: "À propos", widget: "string" }
+                      - { name: "contact", label: "Contact", widget: "string" }
+              - name: "hero"
+                label: "Section Hero"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "subtitle", label: "Sous-titre", widget: "string" }
+                  - { name: "cta", label: "Bouton CTA", widget: "string" }
+              - name: "projects"
+                label: "Projets"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre de la section", widget: "string" }
+                  - name: "project1"
+                    label: "Projet 1"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["React", "Node.js"] }
+                  - name: "project2"
+                    label: "Projet 2"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["HTML", "CSS", "JavaScript"] }
+                  - name: "project3"
+                    label: "Projet 3"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["Python", "TensorFlow"] }
+                  - name: "project4"
+                    label: "Projet 4"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["Flutter", "Firebase"] }
+              - name: "about"
+                label: "À propos"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "content", label: "Contenu", widget: "text" }
+                  - { name: "skills", label: "Compétences", widget: "text" }
+              - name: "contact"
+                label: "Contact"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "subtitle", label: "Sous-titre", widget: "string" }
+                  - { name: "email", label: "Champ Email", widget: "string" }
+                  - { name: "message", label: "Champ Message", widget: "string" }
+                  - { name: "send", label: "Bouton Envoyer", widget: "string" }
+              - name: "footer"
+                label: "Pied de page"
+                widget: "object"
+                fields:
+                  - { name: "text", label: "Texte", widget: "string" }
+          - name: "fr"
+            label: "🇫🇷 Français"
+            widget: "object"
+            fields:
+              - name: "site"
+                label: "Site"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - name: "nav"
+                    label: "Navigation"
+                    widget: "object"
+                    fields:
+                      - { name: "home", label: "Accueil", widget: "string" }
+                      - { name: "projects", label: "Projets", widget: "string" }
+                      - { name: "about", label: "À propos", widget: "string" }
+                      - { name: "contact", label: "Contact", widget: "string" }
+              - name: "hero"
+                label: "Section Hero"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "subtitle", label: "Sous-titre", widget: "string" }
+                  - { name: "cta", label: "Bouton CTA", widget: "string" }
+              - name: "projects"
+                label: "Projets"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre de la section", widget: "string" }
+                  - name: "project1"
+                    label: "Projet 1"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["React", "Node.js"] }
+                  - name: "project2"
+                    label: "Projet 2"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["HTML", "CSS", "JavaScript"] }
+                  - name: "project3"
+                    label: "Projet 3"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["Python", "TensorFlow"] }
+                  - name: "project4"
+                    label: "Projet 4"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Titre", widget: "string" }
+                      - { name: "description", label: "Description", widget: "text" }
+                      - { name: "tags", label: "Tags", widget: "list", default: ["Flutter", "Firebase"] }
+              - name: "about"
+                label: "À propos"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "content", label: "Contenu", widget: "text" }
+                  - { name: "skills", label: "Compétences", widget: "text" }
+              - name: "contact"
+                label: "Contact"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Titre", widget: "string" }
+                  - { name: "subtitle", label: "Sous-titre", widget: "string" }
+                  - { name: "email", label: "Champ Email", widget: "string" }
+                  - { name: "message", label: "Champ Message", widget: "string" }
+                  - { name: "send", label: "Bouton Envoyer", widget: "string" }
+              - name: "footer"
+                label: "Pied de page"
+                widget: "object"
+                fields:
+                  - { name: "text", label: "Texte", widget: "string" }
+          - name: "ar"
+            label: "🇸🇦 العربية"
+            widget: "object"
+            fields:
+              - name: "site"
+                label: "الموقع"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "العنوان", widget: "string" }
+                  - name: "nav"
+                    label: "القائمة"
+                    widget: "object"
+                    fields:
+                      - { name: "home", label: "الرئيسية", widget: "string" }
+                      - { name: "projects", label: "المشاريع", widget: "string" }
+                      - { name: "about", label: "عني", widget: "string" }
+                      - { name: "contact", label: "اتصل", widget: "string" }
+              - name: "hero"
+                label: "القسم الرئيسي"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "العنوان", widget: "string" }
+                  - { name: "subtitle", label: "العنوان الفرعي", widget: "string" }
+                  - { name: "cta", label: "زر الدعوة", widget: "string" }
+              - name: "projects"
+                label: "المشاريع"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "عنوان القسم", widget: "string" }
+                  - name: "project1"
+                    label: "مشروع 1"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "العنوان", widget: "string" }
+                      - { name: "description", label: "الوصف", widget: "text" }
+                      - { name: "tags", label: "العلامات", widget: "list", default: ["React", "Node.js"] }
+                  - name: "project2"
+                    label: "مشروع 2"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "العنوان", widget: "string" }
+                      - { name: "description", label: "الوصف", widget: "text" }
+                      - { name: "tags", label: "العلامات", widget: "list", default: ["HTML", "CSS", "JavaScript"] }
+                  - name: "project3"
+                    label: "مشروع 3"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "العنوان", widget: "string" }
+                      - { name: "description", label: "الوصف", widget: "text" }
+                      - { name: "tags", label: "العلامات", widget: "list", default: ["Python", "TensorFlow"] }
+                  - name: "project4"
+                    label: "مشروع 4"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "العنوان", widget: "string" }
+                      - { name: "description", label: "الوصف", widget: "text" }
+                      - { name: "tags", label: "العلامات", widget: "list", default: ["Flutter", "Firebase"] }
+              - name: "about"
+                label: "عني"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "العنوان", widget: "string" }
+                  - { name: "content", label: "المحتوى", widget: "text" }
+                  - { name: "skills", label: "المهارات", widget: "text" }
+              - name: "contact"
+                label: "اتصل"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "العنوان", widget: "string" }
+                  - { name: "subtitle", label: "العنوان الفرعي", widget: "string" }
+                  - { name: "email", label: "حقل البريد", widget: "string" }
+                  - { name: "message", label: "حقل الرسالة", widget: "string" }
+                  - { name: "send", label: "زر الإرسال", widget: "string" }
+              - name: "footer"
+                label: "التذييل"
+                widget: "object"
+                fields:
+                  - { name: "text", label: "النص", widget: "string" }
+          - name: "ru"
+            label: "🇷🇺 Русский"
+            widget: "object"
+            fields:
+              - name: "site"
+                label: "Сайт"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Заголовок", widget: "string" }
+                  - name: "nav"
+                    label: "Навигация"
+                    widget: "object"
+                    fields:
+                      - { name: "home", label: "Главная", widget: "string" }
+                      - { name: "projects", label: "Проекты", widget: "string" }
+                      - { name: "about", label: "Обо мне", widget: "string" }
+                      - { name: "contact", label: "Контакты", widget: "string" }
+              - name: "hero"
+                label: "Герой"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Заголовок", widget: "string" }
+                  - { name: "subtitle", label: "Подзаголовок", widget: "string" }
+                  - { name: "cta", label: "Кнопка", widget: "string" }
+              - name: "projects"
+                label: "Проекты"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Заголовок раздела", widget: "string" }
+                  - name: "project1"
+                    label: "Проект 1"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Заголовок", widget: "string" }
+                      - { name: "description", label: "Описание", widget: "text" }
+                      - { name: "tags", label: "Теги", widget: "list", default: ["React", "Node.js"] }
+                  - name: "project2"
+                    label: "Проект 2"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Заголовок", widget: "string" }
+                      - { name: "description", label: "Описание", widget: "text" }
+                      - { name: "tags", label: "Теги", widget: "list", default: ["HTML", "CSS", "JavaScript"] }
+                  - name: "project3"
+                    label: "Проект 3"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Заголовок", widget: "string" }
+                      - { name: "description", label: "Описание", widget: "text" }
+                      - { name: "tags", label: "Теги", widget: "list", default: ["Python", "TensorFlow"] }
+                  - name: "project4"
+                    label: "Проект 4"
+                    widget: "object"
+                    fields:
+                      - { name: "title", label: "Заголовок", widget: "string" }
+                      - { name: "description", label: "Описание", widget: "text" }
+                      - { name: "tags", label: "Теги", widget: "list", default: ["Flutter", "Firebase"] }
+              - name: "about"
+                label: "Обо мне"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Заголовок", widget: "string" }
+                  - { name: "content", label: "Содержание", widget: "text" }
+                  - { name: "skills", label: "Навыки", widget: "text" }
+              - name: "contact"
+                label: "Контакты"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Заголовок", widget: "string" }
+                  - { name: "subtitle", label: "Подзаголовок", widget: "string" }
+                  - { name: "email", label: "Поле Email", widget: "string" }
+                  - { name: "message", label: "Поле Сообщения", widget: "string" }
+                  - { name: "send", label: "Кнопка Отправить", widget: "string" }
+              - name: "footer"
+                label: "Подвал"
+                widget: "object"
+                fields:
+                  - { name: "text", label: "Текст", widget: "string" }

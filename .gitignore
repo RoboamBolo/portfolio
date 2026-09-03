@@ -1,0 +1,35 @@
+# Créer le fichier .gitignore
+echo "# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de log
+*.log
+npm-debug.log*
+
+# Dossiers de dépendances
+node_modules/
+vendor/
+
+# Fichiers de cache
+.cache/
+*.tmp
+
+# Fichiers de configuration locaux
+.env
+.env.local
+
+# Dossiers de build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.temp
+" > .gitignore

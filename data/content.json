@@ -1,0 +1,1206 @@
+{
+  "fr": {
+    "site": { "title": "Roboam Bolossilia - Développeur Full-Stack & Architecte de Solutions" },
+    "nav": {
+      "home": "Accueil",
+      "about": "Profil",
+      "skills": "Compétences",
+      "architecture": "Architecture",
+      "projects": "Projets",
+      "methodology": "Méthode",
+      "gallery": "Galerie",
+      "contact": "Contact",
+      "admin": "Admin",
+      "cta": "Discuter d'un projet"
+    },
+    "hero": {
+      "location": "Bangui, République centrafricaine",
+      "name": "Roboam<br>Bolossilia",
+      "title": "Full-Stack Developer <span class=\"hero__title-amp\">&amp;</span> Digital Solutions Architect",
+      "pitch": "Je conçois et développe des solutions numériques qui transforment des besoins complexes en systèmes fiables, sécurisés et évolutifs.",
+      "cta1": "Explorer mes projets",
+      "cta2": "Discuter d'un projet",
+      "cv": "Télécharger mon CV"
+    },
+    "about": {
+      "eyebrow": "Profil",
+      "heading": "Je ne développe pas seulement des applications.<br>Je construis des solutions.",
+      "lead": "Mon approche part toujours du problème métier avant de choisir la technologie. Une interface convaincante ne suffit pas si le système qui la fait fonctionner n'est pas pensé pour durer.",
+      "body": "Avant d'écrire la première ligne de code, je cherche à comprendre qui utilisera le système, dans quelles conditions, avec quelles contraintes — connectivité, volume de données, niveau de sécurité requis — puis je conçois une architecture capable d'y répondre dans la durée.",
+      "step1": "Analyse",
+      "step2": "Conception",
+      "step3": "Architecture",
+      "step4": "Développement",
+      "step5": "Tests & sécurité",
+      "step6": "Déploiement",
+      "step7": "Évolution"
+    },
+    "philosophy": {
+      "quote": "« Une bonne application ne se mesure pas uniquement à son interface, mais à la qualité du système qui se trouve derrière. »",
+      "tag1": "Architecture propre",
+      "tag2": "Code maintenable",
+      "tag3": "Sécurité",
+      "tag4": "Performance",
+      "tag5": "Expérience utilisateur",
+      "tag6": "Évolutivité",
+      "tag7": "Fiabilité"
+    },
+    "skills": {
+      "eyebrow": "Compétences",
+      "heading": "Les technologies, et le rôle qu'elles jouent<br>dans une architecture.",
+      "front": { "title": "Front-end", "role": "Ce que l'utilisateur voit et manipule." },
+      "back": { "title": "Back-end", "role": "La logique métier et les règles du système." },
+      "mobile": { "title": "Mobile", "role": "L'accès au système en mobilité, y compris hors ligne." },
+      "data": { "title": "Données", "role": "Le stockage et l'intégrité de l'information." },
+      "arch": { "title": "Architecture", "role": "La structure qui rend le système fiable et évolutif." },
+      "tools": { "title": "Outils", "role": "L'environnement de travail et de collaboration." }
+    },
+    "architecture": {
+      "eyebrow": "Architecture",
+      "heading": "Derrière chaque interface,<br>il y a une architecture.",
+      "lead": "Chaque système que je construis suit un même principe : séparer clairement ce que l'utilisateur voit, ce qui décide, et ce qui est conservé — pour que chaque couche puisse évoluer sans casser les autres.",
+      "node": {
+        "user": "UTILISATEUR",
+        "front": "FRONT-END",
+        "api": "REST API",
+        "back": "BACK-END",
+        "business": "LOGIQUE MÉTIER",
+        "security": "SÉCURITÉ",
+        "db": "BASE DE DONNÉES"
+      }
+    },
+    "projects": {
+      "eyebrow": "Projets",
+      "heading": "Des idées transformées en systèmes.",
+      "status": { "tbd": "Statut à confirmer" },
+      "sifgc": {
+        "eyebrow": "Système métier — Gestion & comptabilité",
+        "title": "SIFGC — Système Intégré de Facturation et de Gestion Comptable",
+        "context_label": "Contexte",
+        "context": "Les organisations qui facturent et suivent leur comptabilité manuellement perdent en traçabilité et en fiabilité à mesure que leur activité grandit.",
+        "problem_label": "Problème",
+        "problem": "Centraliser la facturation, la TVA et le suivi comptable dans un seul système, avec des accès différenciés selon les rôles.",
+        "solution_label": "Solution",
+        "solution": "Une plateforme de facturation et de gestion comptable structurée autour des clients, des factures, des rapports et des utilisateurs, avec traçabilité des actions sensibles.",
+        "features_label": "Fonctionnalités clés",
+        "feature1": "Gestion des clients",
+        "feature2": "Facturation & TVA",
+        "feature3": "Suivi comptable & rapports",
+        "feature4": "Utilisateurs & rôles",
+        "feature5": "Traçabilité des actions",
+        "tech_label": "Technologies"
+      },
+      "sina": {
+        "eyebrow": "Transformation numérique — Secteur agricole",
+        "title": "SINA-RCA — Système d'Information Numérique Agricole",
+        "context_label": "Contexte",
+        "context": "La collecte de données agricoles sur le terrain se heurte souvent à une connectivité limitée, ce qui freine la remontée d'information fiable.",
+        "problem_label": "Problème",
+        "problem": "Permettre aux agents et producteurs de collecter et consulter des données agricoles même sans connexion, avec une synchronisation fiable au retour du réseau.",
+        "solution_label": "Solution",
+        "solution": "Un système combinant application mobile, API et plateforme web, conçu offline-first : les données sont saisies localement puis synchronisées.",
+        "features_label": "Fonctionnalités clés",
+        "feature1": "Fonctionnement hors ligne",
+        "feature2": "Synchronisation des données",
+        "feature3": "Calendrier agricole",
+        "feature4": "Suivi des agents & producteurs",
+        "feature5": "Collecte de données terrain",
+        "tech_label": "Technologies",
+        "arch_label": "Architecture"
+      },
+      "snicgtm": {
+        "eyebrow": "Digitalisation — Identification & contrôle",
+        "title": "SNICGTM — Système National d'Identification, de Contrôle et de Gestion des Taxi-Motos",
+        "context_label": "Contexte",
+        "context": "Le contrôle et l'identification des taxi-motos reposent souvent sur des registres papier, difficiles à vérifier et à sécuriser.",
+        "problem_label": "Problème",
+        "problem": "Centraliser l'identification des conducteurs, propriétaires et véhicules, et rendre le contrôle vérifiable sur le terrain.",
+        "solution_label": "Solution",
+        "solution": "Un système d'identification par QR Code associé à un dossier numérique complet du conducteur, du propriétaire et du véhicule, consultable lors des contrôles.",
+        "features_label": "Fonctionnalités clés",
+        "feature1": "Identification conducteur / propriétaire / véhicule",
+        "feature2": "QR Code de contrôle",
+        "feature3": "Historique & traçabilité",
+        "feature4": "Gestion administrative",
+        "tech_label": "Technologies"
+      },
+      "facial": {
+        "eyebrow": "Sécurité — Security by Design",
+        "title": "Authentification faciale",
+        "context_label": "Contexte",
+        "context": "Les systèmes d'authentification classiques (mot de passe seul) restent vulnérables et offrent peu de visibilité sur les tentatives d'accès.",
+        "problem_label": "Problème",
+        "problem": "Vérifier l'identité d'un utilisateur via la caméra, tout en gardant une trace fiable des tentatives et en réagissant aux comportements suspects.",
+        "solution_label": "Solution",
+        "solution": "Un module d'authentification faciale intégrant vérification, journalisation des événements de sécurité et blocage après tentatives répétées.",
+        "features_label": "Fonctionnalités clés",
+        "feature1": "Vérification par caméra",
+        "feature2": "Journalisation des tentatives",
+        "feature3": "Détection & blocage",
+        "feature4": "Événements de sécurité",
+        "tech_label": "Technologies"
+      },
+      "ist": {
+        "eyebrow": "Solution numérique — Éducation",
+        "title": "IST Bangui — Plateforme numérique académique",
+        "context_label": "Contexte",
+        "context": "Les étudiants ont besoin d'un accès simple et fiable aux cours, au calendrier des examens et aux ressources, même en cas de connexion instable.",
+        "problem_label": "Problème",
+        "problem": "Centraliser les informations académiques et permettre leur consultation hors ligne une fois synchronisées.",
+        "solution_label": "Solution",
+        "solution": "Une plateforme regroupant cours, calendrier d'examens et téléchargements, avec fonctionnement offline et synchronisation.",
+        "features_label": "Fonctionnalités clés",
+        "feature1": "Cours & ressources",
+        "feature2": "Calendrier des examens",
+        "feature3": "Téléchargements",
+        "feature4": "Fonctionnement hors ligne",
+        "tech_label": "Technologies"
+      }
+    },
+    "offline": {
+      "eyebrow": "Offline-first",
+      "heading": "Même sans Internet,<br>le système continue de fonctionner.",
+      "lead": "Une connectivité stable n'est pas toujours garantie. Les systèmes que je conçois pour des contextes réels — terrain, mobilité, zones peu couvertes — gardent des données locales et se synchronisent dès que le réseau revient, sans perte d'information.",
+      "online": "En ligne",
+      "sync": "Synchronisation",
+      "local": "Base locale",
+      "offline": "Hors ligne",
+      "work": "Travail continu",
+      "reconnect": "Connexion retrouvée",
+      "resync": "Synchronisation"
+    },
+    "security": {
+      "eyebrow": "Sécurité",
+      "heading": "La sécurité n'est pas une fonctionnalité.<br>C'est une fondation.",
+      "lead": "Ces principes guident la façon dont je conçois un système. Leur mise en œuvre précise dépend toujours du contexte et des exigences réelles du projet.",
+      "pillar1": { "title": "Authentification", "desc": "Vérifier de façon fiable qui accède au système." },
+      "pillar2": { "title": "Autorisations & rôles", "desc": "Limiter chaque accès à ce qui est réellement nécessaire." },
+      "pillar3": { "title": "Validation des données", "desc": "Ne jamais faire confiance aveuglément à une entrée utilisateur." },
+      "pillar4": { "title": "Journalisation", "desc": "Garder une trace fiable des actions sensibles." },
+      "pillar5": { "title": "Protection des données", "desc": "Traiter les informations sensibles avec rigueur." },
+      "pillar6": { "title": "Gestion des sessions", "desc": "Limiter la fenêtre d'exposition en cas de compromission." }
+    },
+    "methodology": {
+      "eyebrow": "Méthodologie",
+      "heading": "De l'idée au système.",
+      "step1": { "title": "Comprendre", "desc": "Identifier le problème réel à résoudre." },
+      "step2": { "title": "Analyser", "desc": "Comprendre les utilisateurs et les contraintes." },
+      "step3": { "title": "Concevoir", "desc": "UX/UI, modèle de données, architecture." },
+      "step4": { "title": "Développer", "desc": "Construire la solution étape par étape." },
+      "step5": { "title": "Tester", "desc": "Fiabilité, sécurité et performance." },
+      "step6": { "title": "Déployer", "desc": "Mettre le système en production." },
+      "step7": { "title": "Faire évoluer", "desc": "Maintenance et amélioration continue." }
+    },
+    "capabilities": {
+      "eyebrow": "Domaines d'intervention",
+      "heading": "Ce que je peux construire.",
+      "web": { "title": "Applications web", "desc": "Applications métiers et plateformes web pensées pour des usages réels." },
+      "mobile": { "title": "Applications mobiles", "desc": "Applications Android / iOS développées avec Flutter." },
+      "business": { "title": "Systèmes métiers", "desc": "Solutions adaptées aux processus réels des organisations." },
+      "api": { "title": "API & Backend", "desc": "Services backend robustes, structurés et documentés." },
+      "digital": { "title": "Digitalisation", "desc": "Transformation de processus manuels en solutions numériques." },
+      "offline": { "title": "Offline-first", "desc": "Systèmes capables de fonctionner avec une connectivité limitée." }
+    },
+    "parcours": {
+      "eyebrow": "Parcours",
+      "heading": "Formation & expérience.",
+      "education": {
+        "date": "2021 — 2025",
+        "title": "Licence Professionnelle en Informatique de Gestion",
+        "school": "Institut Supérieur de Technologie (IST) — Bangui, RCA",
+        "desc": "Formation pluridisciplinaire couvrant les réseaux informatiques, le développement, la bases de données et la gestion d'entreprise. Option Informatique de Gestion."
+      },
+      "internship": {
+        "date": "2026",
+        "title": "Stage académique — Développeur Full-Stack",
+        "company": "RcaSoft — Bangui, RCA",
+        "desc": "Conception et développement de solutions logicielles pour la gestion d'entreprise. Participation à des projets de digitalisation et d'architecture logicielle."
+      },
+      "current": {
+        "date": "2026 — Présent",
+        "title": "Développeur Full-Stack & Architecte Solutions",
+        "company": "RcaSoft — Bangui, RCA",
+        "desc": "Conception et développement d'applications web, mobiles et de systèmes métiers. Spécialisation dans les architectures offline-first, la sécurité et la digitalisation des processus.",
+        "projects_label": "Projets clés :",
+        "projects": "SIFGC (Gestion comptable), SINA-RCA (Système Agricole), SNICGTM (Identification Taxi-Motos), Authentification faciale, Gestion de Marché. Projet de Gouvernance Numérique du Secteur Public (PGNSP) dans le domaine du Réseau Informatique"
+      },
+      "certs": {
+        "date": "En cours",
+        "title": "Certifications Cisco — Réseaux & Cybersécurité",
+        "school": "Cisco Networking Academy",
+        "desc": "Poursuite de certifications en réseaux informatiques et cybersécurité pour renforcer les compétences en infrastructure et sécurité des systèmes."
+      }
+    },
+    "cert": {
+      "roadmap": {
+        "title": "Feuille de route — Certifications visées",
+        "note": "Certifications identifiées pour renforcer mon profil en sécurité et en développement. Aucune n'est obtenue à ce jour — classées par ordre de priorité."
+      },
+      "table": { "priority": "Priorité", "cert": "Certification", "why": "Pourquoi" },
+      "row1": { "why": "Totalement gratuite — très reconnue dans le secteur" },
+      "row2": { "why": "Gratuit, très complet, projets concrets pour le portfolio" },
+      "row3": { "why": "Complète les certifications Cisco en cours" },
+      "row4": { "why": "Reconnaissance en sécurité réseau, 100% gratuit" }
+    },
+    "trust": {
+      "eyebrow": "Pourquoi me faire confiance",
+      "heading": "Une approche orientée système.",
+      "pillar1": { "title": "Architecture", "desc": "Construire sur des fondations solides." },
+      "pillar2": { "title": "Fiabilité", "desc": "Penser aux cas réels et aux contraintes du terrain." },
+      "pillar3": { "title": "Sécurité", "desc": "Intégrer la sécurité dès la conception." },
+      "pillar4": { "title": "Évolutivité", "desc": "Construire des solutions capables d'évoluer." }
+    },
+    "gallery": {
+      "eyebrow": "Galerie",
+      "heading": "Quelques-uns de mes travaux visuels.",
+      "lead": "Une sélection d'images illustrant mes projets, mes interfaces et mes réalisations.",
+      "tag": { "architecture": "Architecture" },
+      "desc": { "architecture": "Schéma d'architecture des systèmes" },
+      "note": "Ajoutez vos propres images dans le dossier",
+      "items": [
+        {
+          "id": "gallery1",
+          "title": "SIFGC Dashboard",
+          "description": "Interface principale du système de gestion",
+          "image": "projet1.jpg",
+          "category": "Business"
+        },
+        {
+          "id": "gallery2",
+          "title": "Architecture SINA-RCA",
+          "description": "Schéma d'architecture du système agricole",
+          "image": "projet2.jpg",
+          "category": "Architecture"
+        },
+        {
+          "id": "gallery3",
+          "title": "Authentification faciale",
+          "description": "Interface de reconnaissance faciale",
+          "image": "projet3.jpg",
+          "category": "Security"
+        },
+        {
+          "id": "gallery4",
+          "title": "Application Mobile IST",
+          "description": "Application éducative hors ligne",
+          "image": "projet4.jpg",
+          "category": "Mobile"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Vous avez un problème à résoudre ?",
+      "lead": "Parlons de votre idée, de votre projet ou du problème numérique que vous souhaitez résoudre.",
+      "email_label": "Email",
+      "phone_label": "Téléphone",
+      "location_label": "Localisation",
+      "location": "Bangui, République centrafricaine",
+      "form": { "name": "Nom", "email": "Email", "subject": "Sujet", "message": "Message", "submit": "Envoyer le message" }
+    },
+    "footer": { "title": "Full-Stack Developer & Digital Solutions Architect", "tagline": "Construire. Sécuriser. Faire évoluer." }
+  },
+  "en": {
+    "site": { "title": "Roboam Bolossilia - Full-Stack Developer & Digital Solutions Architect" },
+    "nav": {
+      "home": "Home",
+      "about": "Profile",
+      "skills": "Skills",
+      "architecture": "Architecture",
+      "projects": "Projects",
+      "methodology": "Method",
+      "gallery": "Gallery",
+      "contact": "Contact",
+      "admin": "Admin",
+      "cta": "Discuss a project"
+    },
+    "hero": {
+      "location": "Bangui, Central African Republic",
+      "name": "Roboam<br>Bolossilia",
+      "title": "Full-Stack Developer <span class=\"hero__title-amp\">&amp;</span> Digital Solutions Architect",
+      "pitch": "I design and develop digital solutions that transform complex needs into reliable, secure and scalable systems.",
+      "cta1": "Explore my projects",
+      "cta2": "Discuss a project",
+      "cv": "Download my CV"
+    },
+    "about": {
+      "eyebrow": "Profile",
+      "heading": "I don't just develop applications.<br>I build solutions.",
+      "lead": "My approach always starts with the business problem before choosing the technology. A convincing interface is not enough if the system that powers it is not designed to last.",
+      "body": "Before writing the first line of code, I seek to understand who will use the system, under what conditions, with what constraints — connectivity, data volume, required security level — then I design an architecture capable of responding to them over time.",
+      "step1": "Analysis",
+      "step2": "Design",
+      "step3": "Architecture",
+      "step4": "Development",
+      "step5": "Testing & security",
+      "step6": "Deployment",
+      "step7": "Evolution"
+    },
+    "philosophy": {
+      "quote": "« A good application is not measured solely by its interface, but by the quality of the system behind it. »",
+      "tag1": "Clean architecture",
+      "tag2": "Maintainable code",
+      "tag3": "Security",
+      "tag4": "Performance",
+      "tag5": "User experience",
+      "tag6": "Scalability",
+      "tag7": "Reliability"
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "heading": "Technologies and the role they play<br>in an architecture.",
+      "front": { "title": "Front-end", "role": "What the user sees and interacts with." },
+      "back": { "title": "Back-end", "role": "The business logic and system rules." },
+      "mobile": { "title": "Mobile", "role": "Access to the system on the move, including offline." },
+      "data": { "title": "Data", "role": "Storage and integrity of information." },
+      "arch": { "title": "Architecture", "role": "The structure that makes the system reliable and scalable." },
+      "tools": { "title": "Tools", "role": "The work and collaboration environment." }
+    },
+    "architecture": {
+      "eyebrow": "Architecture",
+      "heading": "Behind every interface,<br>there is an architecture.",
+      "lead": "Every system I build follows the same principle: clearly separate what the user sees, what decides, and what is stored — so that each layer can evolve without breaking the others.",
+      "node": {
+        "user": "USER",
+        "front": "FRONT-END",
+        "api": "REST API",
+        "back": "BACK-END",
+        "business": "BUSINESS LOGIC",
+        "security": "SECURITY",
+        "db": "DATABASE"
+      }
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "heading": "Ideas transformed into systems.",
+      "status": { "tbd": "Status to be confirmed" },
+      "sifgc": {
+        "eyebrow": "Business system — Invoicing & accounting",
+        "title": "SIFGC — Integrated Invoicing and Accounting Management System",
+        "context_label": "Context",
+        "context": "Organizations that invoice and track their accounting manually lose traceability and reliability as their activity grows.",
+        "problem_label": "Problem",
+        "problem": "Centralize invoicing, VAT and accounting tracking in a single system, with differentiated access according to roles.",
+        "solution_label": "Solution",
+        "solution": "An invoicing and accounting management platform structured around clients, invoices, reports and users, with traceability of sensitive actions.",
+        "features_label": "Key features",
+        "feature1": "Client management",
+        "feature2": "Invoicing & VAT",
+        "feature3": "Accounting tracking & reports",
+        "feature4": "Users & roles",
+        "feature5": "Action traceability",
+        "tech_label": "Technologies"
+      },
+      "sina": {
+        "eyebrow": "Digital transformation — Agricultural sector",
+        "title": "SINA-RCA — Agricultural Digital Information System",
+        "context_label": "Context",
+        "context": "The collection of agricultural data in the field often faces limited connectivity, which hinders the reporting of reliable information.",
+        "problem_label": "Problem",
+        "problem": "Allow agents and producers to collect and consult agricultural data even without connection, with reliable synchronization when the network returns.",
+        "solution_label": "Solution",
+        "solution": "A system combining mobile application, API and web platform, designed offline-first: data is entered locally then synchronized.",
+        "features_label": "Key features",
+        "feature1": "Offline operation",
+        "feature2": "Data synchronization",
+        "feature3": "Agricultural calendar",
+        "feature4": "Agent & producer tracking",
+        "feature5": "Field data collection",
+        "tech_label": "Technologies",
+        "arch_label": "Architecture"
+      },
+      "snicgtm": {
+        "eyebrow": "Digitalization — Identification & control",
+        "title": "SNICGTM — National System for Identification, Control and Management of Taxi-Motos",
+        "context_label": "Context",
+        "context": "The control and identification of taxi-motos often relies on paper registers, which are difficult to verify and secure.",
+        "problem_label": "Problem",
+        "problem": "Centralize the identification of drivers, owners and vehicles, and make control verifiable in the field.",
+        "solution_label": "Solution",
+        "solution": "An identification system by QR Code associated with a complete digital file of the driver, owner and vehicle, consultable during checks.",
+        "features_label": "Key features",
+        "feature1": "Driver / owner / vehicle identification",
+        "feature2": "QR Code control",
+        "feature3": "History & traceability",
+        "feature4": "Administrative management",
+        "tech_label": "Technologies"
+      },
+      "facial": {
+        "eyebrow": "Security — Security by Design",
+        "title": "Facial authentication",
+        "context_label": "Context",
+        "context": "Traditional authentication systems (password alone) remain vulnerable and offer little visibility into access attempts.",
+        "problem_label": "Problem",
+        "problem": "Verify a user's identity via camera, while keeping a reliable trace of attempts and reacting to suspicious behavior.",
+        "solution_label": "Solution",
+        "solution": "A facial authentication module integrating verification, logging of security events and blocking after repeated attempts.",
+        "features_label": "Key features",
+        "feature1": "Camera verification",
+        "feature2": "Attempt logging",
+        "feature3": "Detection & blocking",
+        "feature4": "Security events",
+        "tech_label": "Technologies"
+      },
+      "ist": {
+        "eyebrow": "Digital solution — Education",
+        "title": "IST Bangui — Academic digital platform",
+        "context_label": "Context",
+        "context": "Students need simple and reliable access to courses, exam schedules and resources, even in unstable connection conditions.",
+        "problem_label": "Problem",
+        "problem": "Centralize academic information and allow offline consultation once synchronized.",
+        "solution_label": "Solution",
+        "solution": "A platform grouping courses, exam schedules and downloads, with offline operation and synchronization.",
+        "features_label": "Key features",
+        "feature1": "Courses & resources",
+        "feature2": "Exam calendar",
+        "feature3": "Downloads",
+        "feature4": "Offline operation",
+        "tech_label": "Technologies"
+      }
+    },
+    "offline": {
+      "eyebrow": "Offline-first",
+      "heading": "Even without Internet,<br>the system continues to work.",
+      "lead": "Stable connectivity is not always guaranteed. The systems I design for real-world contexts — field work, mobility, poorly covered areas — keep local data and synchronize as soon as the network returns, without loss of information.",
+      "online": "Online",
+      "sync": "Synchronization",
+      "local": "Local storage",
+      "offline": "Offline",
+      "work": "Continuous work",
+      "reconnect": "Connection restored",
+      "resync": "Synchronization"
+    },
+    "security": {
+      "eyebrow": "Security",
+      "heading": "Security is not a feature.<br>It's a foundation.",
+      "lead": "These principles guide how I design a system. Their precise implementation always depends on the context and real project requirements.",
+      "pillar1": { "title": "Authentication", "desc": "Reliably verify who accesses the system." },
+      "pillar2": { "title": "Authorization & roles", "desc": "Limit each access to what is strictly necessary." },
+      "pillar3": { "title": "Data validation", "desc": "Never blindly trust user input." },
+      "pillar4": { "title": "Logging", "desc": "Keep a reliable record of sensitive actions." },
+      "pillar5": { "title": "Data protection", "desc": "Handle sensitive information with rigor." },
+      "pillar6": { "title": "Session management", "desc": "Limit the exposure window in case of compromise." }
+    },
+    "methodology": {
+      "eyebrow": "Methodology",
+      "heading": "From idea to system.",
+      "step1": { "title": "Understand", "desc": "Identify the real problem to solve." },
+      "step2": { "title": "Analyze", "desc": "Understand users and constraints." },
+      "step3": { "title": "Design", "desc": "UX/UI, data model, architecture." },
+      "step4": { "title": "Develop", "desc": "Build the solution step by step." },
+      "step5": { "title": "Test", "desc": "Reliability, security and performance." },
+      "step6": { "title": "Deploy", "desc": "Put the system into production." },
+      "step7": { "title": "Evolve", "desc": "Maintenance and continuous improvement." }
+    },
+    "capabilities": {
+      "eyebrow": "Areas of intervention",
+      "heading": "What I can build.",
+      "web": { "title": "Web applications", "desc": "Business applications and web platforms designed for real uses." },
+      "mobile": { "title": "Mobile applications", "desc": "Android / iOS applications developed with Flutter." },
+      "business": { "title": "Business systems", "desc": "Solutions adapted to the real processes of organizations." },
+      "api": { "title": "API & Backend", "desc": "Robust, structured and documented backend services." },
+      "digital": { "title": "Digitalization", "desc": "Transformation of manual processes into digital solutions." },
+      "offline": { "title": "Offline-first", "desc": "Systems capable of operating with limited connectivity." }
+    },
+    "parcours": {
+      "eyebrow": "Path",
+      "heading": "Education & experience.",
+      "education": {
+        "date": "2021 — 2025",
+        "title": "Professional Bachelor's Degree in Management Information Technology",
+        "school": "Institut Supérieur de Technologie (IST) — Bangui, CAR",
+        "desc": "Multidisciplinary training covering computer networks, development, databases and business management. Management Information Technology option."
+      },
+      "internship": {
+        "date": "2026",
+        "title": "Academic internship — Full-Stack Developer",
+        "company": "RcaSoft — Bangui, CAR",
+        "desc": "Design and development of software solutions for business management. Participation in digitalization and software architecture projects."
+      },
+      "current": {
+        "date": "2026 — Present",
+        "title": "Full-Stack Developer & Solutions Architect",
+        "company": "RcaSoft — Bangui, CAR",
+        "desc": "Design and development of web, mobile and business system applications. Specialization in offline-first architectures, security and process digitalization.",
+        "projects_label": "Key projects:",
+        "projects": "SIFGC (Accounting management), SINA-RCA (Agricultural System), SNICGTM (Taxi-Moto Identification), Facial authentication, Market Management. Public Sector Digital Governance Project (PGNSP) in the field of Computer Networking"
+      },
+      "certs": {
+        "date": "In progress",
+        "title": "Cisco Certifications — Networks & Cybersecurity",
+        "school": "Cisco Networking Academy",
+        "desc": "Pursuing certifications in computer networks and cybersecurity to strengthen skills in infrastructure and system security."
+      }
+    },
+    "cert": {
+      "roadmap": {
+        "title": "Roadmap — Target certifications",
+        "note": "Certifications identified to strengthen my profile in security and development. None have been obtained to date — ranked by priority."
+      },
+      "table": { "priority": "Priority", "cert": "Certification", "why": "Why" },
+      "row1": { "why": "Completely free — highly recognized in the sector" },
+      "row2": { "why": "Free, very comprehensive, concrete projects for the portfolio" },
+      "row3": { "why": "Completes the Cisco certifications in progress" },
+      "row4": { "why": "Network security recognition, 100% free" }
+    },
+    "trust": {
+      "eyebrow": "Why trust me",
+      "heading": "A system-oriented approach.",
+      "pillar1": { "title": "Architecture", "desc": "Build on solid foundations." },
+      "pillar2": { "title": "Reliability", "desc": "Think about real cases and field constraints." },
+      "pillar3": { "title": "Security", "desc": "Integrate security from the design stage." },
+      "pillar4": { "title": "Scalability", "desc": "Build solutions capable of evolving." }
+    },
+    "gallery": {
+      "eyebrow": "Gallery",
+      "heading": "Some of my visual works.",
+      "lead": "A selection of images illustrating my projects, my interfaces and my achievements.",
+      "tag": { "architecture": "Architecture" },
+      "desc": { "architecture": "System architecture diagram" },
+      "note": "Add your own images in the folder",
+      "items": [
+        {
+          "id": "gallery1",
+          "title": "SIFGC Dashboard",
+          "description": "Main interface of the management system",
+          "image": "projet1.jpg",
+          "category": "Business"
+        },
+        {
+          "id": "gallery2",
+          "title": "SINA-RCA Architecture",
+          "description": "Architecture diagram of the agricultural system",
+          "image": "projet2.jpg",
+          "category": "Architecture"
+        },
+        {
+          "id": "gallery3",
+          "title": "Facial Authentication",
+          "description": "Facial recognition interface",
+          "image": "projet3.jpg",
+          "category": "Security"
+        },
+        {
+          "id": "gallery4",
+          "title": "IST Mobile App",
+          "description": "Offline educational application",
+          "image": "projet4.jpg",
+          "category": "Mobile"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Have a problem to solve?",
+      "lead": "Let's talk about your idea, your project or the digital problem you want to solve.",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "location_label": "Location",
+      "location": "Bangui, Central African Republic",
+      "form": { "name": "Name", "email": "Email", "subject": "Subject", "message": "Message", "submit": "Send message" }
+    },
+    "footer": { "title": "Full-Stack Developer & Digital Solutions Architect", "tagline": "Build. Secure. Evolve." }
+  },
+  "ar": {
+    "site": { "title": "روبوام بولوسيليا - مطور Full-Stack ومهندس حلول رقمية" },
+    "nav": {
+      "home": "الرئيسية",
+      "about": "الملف الشخصي",
+      "skills": "المهارات",
+      "architecture": "الهندسة",
+      "projects": "المشاريع",
+      "methodology": "المنهجية",
+      "gallery": "المعرض",
+      "contact": "اتصل",
+      "admin": "الإدارة",
+      "cta": "ناقش مشروعاً"
+    },
+    "hero": {
+      "location": "بانغي، جمهورية أفريقيا الوسطى",
+      "name": "روبوام<br>بولوسيليا",
+      "title": "مطور Full-Stack <span class=\"hero__title-amp\">&amp;</span> مهندس حلول رقمية",
+      "pitch": "أصمم وأطور حلولاً رقمية تحول الاحتياجات المعقدة إلى أنظمة موثوقة وآمنة وقابلة للتطوير.",
+      "cta1": "استكشف مشاريعي",
+      "cta2": "ناقش مشروعاً",
+      "cv": "تحميل السيرة الذاتية"
+    },
+    "about": {
+      "eyebrow": "الملف الشخصي",
+      "heading": "أنا لا أطور تطبيقات فقط.<br>أنا أبني حلولاً.",
+      "lead": "نهجي يبدأ دائماً من المشكلة التجارية قبل اختيار التكنولوجيا. الواجهة المقنعة ليست كافية إذا لم يكن النظام الذي يدعمها مصمماً ليدوم.",
+      "body": "قبل كتابة السطر الأول من الكود، أسعى لفهم من سيستخدم النظام، وتحت أي ظروف، وبأي قيود — الاتصال، حجم البيانات، مستوى الأمان المطلوب — ثم أصمم بنية قادرة على الاستجابة لها مع مرور الوقت.",
+      "step1": "تحليل",
+      "step2": "تصميم",
+      "step3": "هندسة",
+      "step4": "تطوير",
+      "step5": "اختبارات وأمان",
+      "step6": "نشر",
+      "step7": "تطوير مستمر"
+    },
+    "philosophy": {
+      "quote": "« التطبيق الجيد لا يقاس بواجهته فقط، بل بجودة النظام الذي يقف خلفه. »",
+      "tag1": "هندسة نظيفة",
+      "tag2": "كود قابل للصيانة",
+      "tag3": "أمان",
+      "tag4": "أداء",
+      "tag5": "تجربة المستخدم",
+      "tag6": "قابلية التوسع",
+      "tag7": "موثوقية"
+    },
+    "skills": {
+      "eyebrow": "المهارات",
+      "heading": "التقنيات والدور الذي تلعبه<br>في الهندسة.",
+      "front": { "title": "واجهة أمامية", "role": "ما يراه المستخدم ويتفاعل معه." },
+      "back": { "title": "خلفية", "role": "منطق الأعمال وقواعد النظام." },
+      "mobile": { "title": "تطبيقات جوال", "role": "الوصول إلى النظام أثناء التنقل، بما في ذلك دون اتصال." },
+      "data": { "title": "البيانات", "role": "تخزين المعلومات وسلامتها." },
+      "arch": { "title": "الهندسة", "role": "الهيكل الذي يجعل النظام موثوقاً وقابلاً للتوسع." },
+      "tools": { "title": "الأدوات", "role": "بيئة العمل والتعاون." }
+    },
+    "architecture": {
+      "eyebrow": "الهندسة",
+      "heading": "وراء كل واجهة،<br>هناك هندسة.",
+      "lead": "كل نظام أبنيه يتبع نفس المبدأ: فصل واضح بين ما يراه المستخدم، وما يقرر، وما يتم تخزينه — بحيث يمكن لكل طبقة أن تتطور دون كسر الأخرى.",
+      "node": {
+        "user": "المستخدم",
+        "front": "الواجهة الأمامية",
+        "api": "REST API",
+        "back": "الخلفية",
+        "business": "منطق الأعمال",
+        "security": "الأمان",
+        "db": "قاعدة البيانات"
+      }
+    },
+    "projects": {
+      "eyebrow": "المشاريع",
+      "heading": "أفكار تحولت إلى أنظمة.",
+      "status": { "tbd": "الحالة قيد التأكيد" },
+      "sifgc": {
+        "eyebrow": "نظام أعمال — الفوترة والمحاسبة",
+        "title": "SIFGC — نظام متكامل للفوترة والإدارة المحاسبية",
+        "context_label": "السياق",
+        "context": "المؤسسات التي تقوم بالفوترة وتتبع محاسبتها يدوياً تفقد التتبع والموثوقية مع نمو نشاطها.",
+        "problem_label": "المشكلة",
+        "problem": "مركزية الفوترة وضريبة القيمة المضافة والتتبع المحاسبي في نظام واحد، مع وصول مختلف حسب الأدوار.",
+        "solution_label": "الحل",
+        "solution": "منصة للفوترة والإدارة المحاسبية منظمة حول العملاء والفواتير والتقارير والمستخدمين، مع تتبع الإجراءات الحساسة.",
+        "features_label": "الميزات الرئيسية",
+        "feature1": "إدارة العملاء",
+        "feature2": "الفوترة وضريبة القيمة المضافة",
+        "feature3": "التتبع المحاسبي والتقارير",
+        "feature4": "المستخدمين والأدوار",
+        "feature5": "تتبع الإجراءات",
+        "tech_label": "التقنيات"
+      },
+      "sina": {
+        "eyebrow": "التحول الرقمي — القطاع الزراعي",
+        "title": "SINA-RCA — نظام المعلومات الرقمية الزراعية",
+        "context_label": "السياق",
+        "context": "غالباً ما تواجه جمع البيانات الزراعية في الميدان مشكلة الاتصال المحدود، مما يعيق الإبلاغ عن معلومات موثوقة.",
+        "problem_label": "المشكلة",
+        "problem": "تمكين الوكلاء والمنتجين من جمع واستشارة البيانات الزراعية حتى بدون اتصال، مع مزامنة موثوقة عند عودة الشبكة.",
+        "solution_label": "الحل",
+        "solution": "نظام يجمع بين تطبيق الجوال وAPI والمنصة الإلكترونية، مصمم للعمل دون اتصال: يتم إدخال البيانات محلياً ثم مزامنتها.",
+        "features_label": "الميزات الرئيسية",
+        "feature1": "العمل دون اتصال",
+        "feature2": "مزامنة البيانات",
+        "feature3": "التقويم الزراعي",
+        "feature4": "تتبع الوكلاء والمنتجين",
+        "feature5": "جمع البيانات الميدانية",
+        "tech_label": "التقنيات",
+        "arch_label": "الهندسة"
+      },
+      "snicgtm": {
+        "eyebrow": "الرقمنة — التحديد والتحكم",
+        "title": "SNICGTM — النظام الوطني لتحديد هوية سائقي الدراجات النارية والتحكم فيها وإدارتها",
+        "context_label": "السياق",
+        "context": "غالباً ما يعتمد تحديد هوية سائقي الدراجات النارية والتحكم فيها على سجلات ورقية، يصعب التحقق منها وتأمينها.",
+        "problem_label": "المشكلة",
+        "problem": "مركزية تحديد هوية السائقين والمالكين والمركبات، وجعل التحكم قابلاً للتحقق في الميدان.",
+        "solution_label": "الحل",
+        "solution": "نظام تحديد هوية بواسطة رمز QR مرتبط بملف رقمي كامل للسائق والمالك والمركبة، يمكن الاستعلام عنه أثناء التفتيش.",
+        "features_label": "الميزات الرئيسية",
+        "feature1": "تحديد السائق / المالك / المركبة",
+        "feature2": "التحكم عبر رمز QR",
+        "feature3": "التاريخ والتتبع",
+        "feature4": "الإدارة الإدارية",
+        "tech_label": "التقنيات"
+      },
+      "facial": {
+        "eyebrow": "الأمان — الأمان من التصميم",
+        "title": "المصادقة الوجهية",
+        "context_label": "السياق",
+        "context": "أنظمة المصادقة التقليدية (كلمة المرور فقط) لا تزال عرضة للخطر وتقدم رؤية قليلة لمحاولات الوصول.",
+        "problem_label": "المشكلة",
+        "problem": "التحقق من هوية المستخدم عبر الكاميرا، مع الاحتفاظ بتتبع موثوق للمحاولات والاستجابة للسلوك المشبوه.",
+        "solution_label": "الحل",
+        "solution": "وحدة مصادقة وجهية تتضمن التحقق، وتسجيل أحداث الأمان، والحظر بعد محاولات متكررة.",
+        "features_label": "الميزات الرئيسية",
+        "feature1": "التحقق عبر الكاميرا",
+        "feature2": "تسجيل المحاولات",
+        "feature3": "الكشف والحظر",
+        "feature4": "أحداث الأمان",
+        "tech_label": "التقنيات"
+      },
+      "ist": {
+        "eyebrow": "حل رقمي — التعليم",
+        "title": "IST بانغي — منصة أكاديمية رقمية",
+        "context_label": "السياق",
+        "context": "يحتاج الطلاب إلى وصول بسيط وموثوق إلى الدورات والموارد، حتى في حالات الاتصال غير المستقرة.",
+        "problem_label": "المشكلة",
+        "problem": "مركزية المعلومات الأكاديمية والسماح بالاستشارة دون اتصال بمجرد المزامنة.",
+        "solution_label": "الحل",
+        "solution": "منصة تجمع الدورات وجدول الامتحانات والتنزيلات، مع العمل دون اتصال والمزامنة.",
+        "features_label": "الميزات الرئيسية",
+        "feature1": "الدورات والموارد",
+        "feature2": "جدول الامتحانات",
+        "feature3": "التنزيلات",
+        "feature4": "العمل دون اتصال",
+        "tech_label": "التقنيات"
+      }
+    },
+    "offline": {
+      "eyebrow": "العمل دون اتصال أولاً",
+      "heading": "حتى بدون إنترنت،<br>النظام يستمر في العمل.",
+      "lead": "الاتصال المستقر ليس مضموناً دائماً. الأنظمة التي أصممها للسياقات الواقعية — العمل الميداني، التنقل، المناطق قليلة التغطية — تحتفظ بالبيانات محلياً وتتزامن بمجرد عودة الشبكة، دون فقدان المعلومات.",
+      "online": "متصل",
+      "sync": "مزامنة",
+      "local": "تخزين محلي",
+      "offline": "غير متصل",
+      "work": "عمل مستمر",
+      "reconnect": "تم استعادة الاتصال",
+      "resync": "مزامنة"
+    },
+    "security": {
+      "eyebrow": "الأمان",
+      "heading": "الأمان ليس ميزة.<br>إنه أساس.",
+      "lead": "هذه المبادئ توجه كيفية تصميمي للنظام. تنفيذها الدقيق يعتمد دائماً على السياق ومتطلبات المشروع الفعلية.",
+      "pillar1": { "title": "المصادقة", "desc": "التحقق بشكل موثوق من يصل إلى النظام." },
+      "pillar2": { "title": "التفويض والأدوار", "desc": "تحديد كل وصول إلى ما هو ضروري فقط." },
+      "pillar3": { "title": "التحقق من البيانات", "desc": "عدم الثقة بشكل أعمى في مدخلات المستخدم." },
+      "pillar4": { "title": "التسجيل", "desc": "الاحتفاظ بسجل موثوق للإجراءات الحساسة." },
+      "pillar5": { "title": "حماية البيانات", "desc": "معالجة المعلومات الحساسة بدقة." },
+      "pillar6": { "title": "إدارة الجلسات", "desc": "تحديد نافذة التعرض في حالة الاختراق." }
+    },
+    "methodology": {
+      "eyebrow": "المنهجية",
+      "heading": "من الفكرة إلى النظام.",
+      "step1": { "title": "فهم", "desc": "تحديد المشكلة الحقيقية لحلها." },
+      "step2": { "title": "تحليل", "desc": "فهم المستخدمين والقيود." },
+      "step3": { "title": "تصميم", "desc": "تجربة المستخدم/واجهة المستخدم، نموذج البيانات، الهندسة." },
+      "step4": { "title": "تطوير", "desc": "بناء الحل خطوة بخطوة." },
+      "step5": { "title": "اختبار", "desc": "الموثوقية والأمان والأداء." },
+      "step6": { "title": "نشر", "desc": "وضع النظام في الإنتاج." },
+      "step7": { "title": "تطوير", "desc": "الصيانة والتحسين المستمر." }
+    },
+    "capabilities": {
+      "eyebrow": "مجالات التدخل",
+      "heading": "ما يمكنني بناؤه.",
+      "web": { "title": "تطبيقات الويب", "desc": "تطبيقات أعمال ومنصات ويب مصممة لاستخدامات حقيقية." },
+      "mobile": { "title": "تطبيقات الجوال", "desc": "تطبيقات Android / iOS المطورة باستخدام Flutter." },
+      "business": { "title": "أنظمة الأعمال", "desc": "حلول مكيفة مع العمليات الحقيقية للمنظمات." },
+      "api": { "title": "API والخلفية", "desc": "خدمات خلفية قوية ومنظمة وموثقة." },
+      "digital": { "title": "الرقمنة", "desc": "تحويل العمليات اليدوية إلى حلول رقمية." },
+      "offline": { "title": "العمل دون اتصال أولاً", "desc": "أنظمة قادرة على العمل مع اتصال محدود." }
+    },
+    "parcours": {
+      "eyebrow": "المسار",
+      "heading": "التعليم والخبرة.",
+      "education": {
+        "date": "2021 — 2025",
+        "title": "بكالوريوس مهني في تكنولوجيا المعلومات الإدارية",
+        "school": "المعهد العالي للتكنولوجيا (IST) — بانغي، جمهورية أفريقيا الوسطى",
+        "desc": "تدريب متعدد التخصصات يغطي شبكات الحاسوب والتطوير وقواعد البيانات وإدارة الأعمال. خيار تكنولوجيا المعلومات الإدارية."
+      },
+      "internship": {
+        "date": "2026",
+        "title": "تدريب أكاديمي — مطور Full-Stack",
+        "company": "RcaSoft — بانغي، جمهورية أفريقيا الوسطى",
+        "desc": "تصميم وتطوير حلول برمجية لإدارة الأعمال. المشاركة في مشاريع الرقمنة وهندسة البرمجيات."
+      },
+      "current": {
+        "date": "2026 — الآن",
+        "title": "مطور Full-Stack ومهندس حلول",
+        "company": "RcaSoft — بانغي، جمهورية أفريقيا الوسطى",
+        "desc": "تصميم وتطوير تطبيقات الويب والجوال وأنظمة الأعمال. التخصص في الهندسة غير المتصلة، الأمان ورقمنة العمليات.",
+        "projects_label": "المشاريع الرئيسية:",
+        "projects": "SIFGC (إدارة المحاسبة)، SINA-RCA (النظام الزراعي)، SNICGTM (تحديد هوية سائقي الدراجات النارية)، المصادقة الوجهية، إدارة السوق. مشروع الحوكمة الرقمية للقطاع العام (PGNSP) في مجال شبكات الحاسوب"
+      },
+      "certs": {
+        "date": "قيد الإنجاز",
+        "title": "شهادات سيسكو — الشبكات والأمن السيبراني",
+        "school": "أكاديمية سيسكو للشبكات",
+        "desc": "متابعة شهادات في شبكات الحاسوب والأمن السيبراني لتعزيز المهارات في البنية التحتية وأمن الأنظمة."
+      }
+    },
+    "cert": {
+      "roadmap": {
+        "title": "خريطة الطريق — الشهادات المستهدفة",
+        "note": "شهادات تم تحديدها لتعزيز ملفي في الأمان والتطوير. لم يتم الحصول على أي منها حتى الآن — مرتبة حسب الأولوية."
+      },
+      "table": { "priority": "الأولوية", "cert": "الشهادة", "why": "لماذا" },
+      "row1": { "why": "مجانية تماماً — معترف بها بشدة في القطاع" },
+      "row2": { "why": "مجانية وشاملة جداً، مشاريع ملموسة للمحفظة" },
+      "row3": { "why": "تكمل شهادات سيسكو قيد الإنجاز" },
+      "row4": { "why": "اعتراف في أمان الشبكات، مجاني 100%" }
+    },
+    "trust": {
+      "eyebrow": "لماذا تثق بي",
+      "heading": "نهج موجه نحو النظام.",
+      "pillar1": { "title": "الهندسة", "desc": "البناء على أسس صلبة." },
+      "pillar2": { "title": "الموثوقية", "desc": "التفكير في الحالات الحقيقية وقيود الميدان." },
+      "pillar3": { "title": "الأمان", "desc": "دمج الأمان من مرحلة التصميم." },
+      "pillar4": { "title": "قابلية التوسع", "desc": "بناء حلول قادرة على التطور." }
+    },
+    "gallery": {
+      "eyebrow": "المعرض",
+      "heading": "بعض أعمالي البصرية.",
+      "lead": "مجموعة مختارة من الصور التي توضح مشاريعي وواجهاتي وإنجازاتي.",
+      "tag": { "architecture": "الهندسة" },
+      "desc": { "architecture": "مخطط هندسة الأنظمة" },
+      "note": "أضف صورك الخاصة في المجلد",
+      "items": [
+        {
+          "id": "gallery1",
+          "title": "لوحة تحكم SIFGC",
+          "description": "الواجهة الرئيسية لنظام الإدارة",
+          "image": "projet1.jpg",
+          "category": "Business"
+        },
+        {
+          "id": "gallery2",
+          "title": "هندسة SINA-RCA",
+          "description": "مخطط هندسة النظام الزراعي",
+          "image": "projet2.jpg",
+          "category": "Architecture"
+        },
+        {
+          "id": "gallery3",
+          "title": "المصادقة الوجهية",
+          "description": "واجهة التعرف على الوجه",
+          "image": "projet3.jpg",
+          "category": "Security"
+        },
+        {
+          "id": "gallery4",
+          "title": "تطبيق IST للجوال",
+          "description": "تطبيق تعليمي غير متصل",
+          "image": "projet4.jpg",
+          "category": "Mobile"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "اتصل",
+      "heading": "لديك مشكلة لحلها؟",
+      "lead": "دعنا نتحدث عن فكرتك، مشروعك أو المشكلة الرقمية التي تريد حلها.",
+      "email_label": "البريد الإلكتروني",
+      "phone_label": "الهاتف",
+      "location_label": "الموقع",
+      "location": "بانغي، جمهورية أفريقيا الوسطى",
+      "form": { "name": "الاسم", "email": "البريد الإلكتروني", "subject": "الموضوع", "message": "الرسالة", "submit": "إرسال الرسالة" }
+    },
+    "footer": { "title": "مطور Full-Stack ومهندس حلول رقمية", "tagline": "بناء. تأمين. تطوير." }
+  },
+  "ru": {
+    "site": { "title": "Робоам Болоссилия - Full-Stack разработчик и архитектор цифровых решений" },
+    "nav": {
+      "home": "Главная",
+      "about": "Профиль",
+      "skills": "Навыки",
+      "architecture": "Архитектура",
+      "projects": "Проекты",
+      "methodology": "Методология",
+      "gallery": "Галерея",
+      "contact": "Контакты",
+      "admin": "Админ",
+      "cta": "Обсудить проект"
+    },
+    "hero": {
+      "location": "Банги, Центральноафриканская Республика",
+      "name": "Робоам<br>Болоссилия",
+      "title": "Full-Stack разработчик <span class=\"hero__title-amp\">&amp;</span> архитектор цифровых решений",
+      "pitch": "Я разрабатываю цифровые решения, которые превращают сложные задачи в надежные, безопасные и масштабируемые системы.",
+      "cta1": "Посмотреть проекты",
+      "cta2": "Обсудить проект",
+      "cv": "Скачать резюме"
+    },
+    "about": {
+      "eyebrow": "Профиль",
+      "heading": "Я не просто разрабатываю приложения.<br>Я создаю решения.",
+      "lead": "Мой подход всегда начинается с бизнес-задачи, а не с выбора технологии. Убедительный интерфейс недостаточен, если система, которая его обеспечивает, не рассчитана на долгосрочную работу.",
+      "body": "Прежде чем написать первую строку кода, я стремлюсь понять, кто будет использовать систему, в каких условиях, с какими ограничениями — связь, объем данных, требуемый уровень безопасности — затем я проектирую архитектуру, способную отвечать на них с течением времени.",
+      "step1": "Анализ",
+      "step2": "Проектирование",
+      "step3": "Архитектура",
+      "step4": "Разработка",
+      "step5": "Тестирование и безопасность",
+      "step6": "Развертывание",
+      "step7": "Эволюция"
+    },
+    "philosophy": {
+      "quote": "« Хорошее приложение измеряется не только интерфейсом, но и качеством системы за ним. »",
+      "tag1": "Чистая архитектура",
+      "tag2": "Поддерживаемый код",
+      "tag3": "Безопасность",
+      "tag4": "Производительность",
+      "tag5": "Пользовательский опыт",
+      "tag6": "Масштабируемость",
+      "tag7": "Надежность"
+    },
+    "skills": {
+      "eyebrow": "Навыки",
+      "heading": "Технологии и их роль<br>в архитектуре.",
+      "front": { "title": "Front-end", "role": "Что видит и с чем взаимодействует пользователь." },
+      "back": { "title": "Back-end", "role": "Бизнес-логика и правила системы." },
+      "mobile": { "title": "Мобильные", "role": "Доступ к системе в движении, включая офлайн." },
+      "data": { "title": "Данные", "role": "Хранение и целостность информации." },
+      "arch": { "title": "Архитектура", "role": "Структура, которая делает систему надежной и масштабируемой." },
+      "tools": { "title": "Инструменты", "role": "Среда работы и сотрудничества." }
+    },
+    "architecture": {
+      "eyebrow": "Архитектура",
+      "heading": "За каждым интерфейсом<br>стоит архитектура.",
+      "lead": "Каждая создаваемая мной система следует одному принципу: четкое разделение того, что видит пользователь, что принимает решения и что хранится — чтобы каждый слой мог развиваться без разрушения других.",
+      "node": {
+        "user": "ПОЛЬЗОВАТЕЛЬ",
+        "front": "FRONT-END",
+        "api": "REST API",
+        "back": "BACK-END",
+        "business": "БИЗНЕС-ЛОГИКА",
+        "security": "БЕЗОПАСНОСТЬ",
+        "db": "БАЗА ДАННЫХ"
+      }
+    },
+    "projects": {
+      "eyebrow": "Проекты",
+      "heading": "Идеи, превращенные в системы.",
+      "status": { "tbd": "Статус требует подтверждения" },
+      "sifgc": {
+        "eyebrow": "Бизнес-система — Выставление счетов и бухгалтерия",
+        "title": "SIFGC — Интегрированная система выставления счетов и бухгалтерского учета",
+        "context_label": "Контекст",
+        "context": "Организации, которые выставляют счета и ведут бухгалтерию вручную, теряют прослеживаемость и надежность по мере роста деятельности.",
+        "problem_label": "Проблема",
+        "problem": "Централизовать выставление счетов, НДС и бухгалтерский учет в одной системе с дифференцированным доступом в зависимости от ролей.",
+        "solution_label": "Решение",
+        "solution": "Платформа для выставления счетов и бухгалтерского учета, структурированная вокруг клиентов, счетов, отчетов и пользователей с прослеживаемостью чувствительных действий.",
+        "features_label": "Ключевые функции",
+        "feature1": "Управление клиентами",
+        "feature2": "Выставление счетов и НДС",
+        "feature3": "Бухгалтерский учет и отчеты",
+        "feature4": "Пользователи и роли",
+        "feature5": "Прослеживаемость действий",
+        "tech_label": "Технологии"
+      },
+      "sina": {
+        "eyebrow": "Цифровая трансформация — Сельское хозяйство",
+        "title": "SINA-RCA — Цифровая информационная система сельского хозяйства",
+        "context_label": "Контекст",
+        "context": "Сбор сельскохозяйственных данных в полевых условиях часто сталкивается с ограниченной связью, что затрудняет получение надежной информации.",
+        "problem_label": "Проблема",
+        "problem": "Позволить агентам и производителям собирать и просматривать сельскохозяйственные данные даже без подключения, с надежной синхронизацией при возвращении сети.",
+        "solution_label": "Решение",
+        "solution": "Система, объединяющая мобильное приложение, API и веб-платформу, разработанная для работы в офлайн-режиме: данные вводятся локально, затем синхронизируются.",
+        "features_label": "Ключевые функции",
+        "feature1": "Офлайн-работа",
+        "feature2": "Синхронизация данных",
+        "feature3": "Сельскохозяйственный календарь",
+        "feature4": "Отслеживание агентов и производителей",
+        "feature5": "Сбор полевых данных",
+        "tech_label": "Технологии",
+        "arch_label": "Архитектура"
+      },
+      "snicgtm": {
+        "eyebrow": "Цифровизация — Идентификация и контроль",
+        "title": "SNICGTM — Национальная система идентификации, контроля и управления такси-мото",
+        "context_label": "Контекст",
+        "context": "Контроль и идентификация такси-мото часто основаны на бумажных регистрах, которые трудно проверить и обезопасить.",
+        "problem_label": "Проблема",
+        "problem": "Централизовать идентификацию водителей, владельцев и транспортных средств, сделав контроль проверяемым в полевых условиях.",
+        "solution_label": "Решение",
+        "solution": "Система идентификации по QR-коду с полным цифровым досье водителя, владельца и транспортного средства, доступным для проверки.",
+        "features_label": "Ключевые функции",
+        "feature1": "Идентификация водителя / владельца / транспортного средства",
+        "feature2": "Контроль по QR-коду",
+        "feature3": "История и прослеживаемость",
+        "feature4": "Административное управление",
+        "tech_label": "Технологии"
+      },
+      "facial": {
+        "eyebrow": "Безопасность — Безопасность с проектирования",
+        "title": "Распознавание лиц",
+        "context_label": "Контекст",
+        "context": "Традиционные системы аутентификации (только пароль) остаются уязвимыми и дают мало информации о попытках доступа.",
+        "problem_label": "Проблема",
+        "problem": "Проверять личность пользователя через камеру, сохраняя надежный журнал попыток и реагируя на подозрительное поведение.",
+        "solution_label": "Решение",
+        "solution": "Модуль распознавания лиц, включающий проверку, журналирование событий безопасности и блокировку после повторных попыток.",
+        "features_label": "Ключевые функции",
+        "feature1": "Проверка через камеру",
+        "feature2": "Журналирование попыток",
+        "feature3": "Обнаружение и блокировка",
+        "feature4": "События безопасности",
+        "tech_label": "Технологии"
+      },
+      "ist": {
+        "eyebrow": "Цифровое решение — Образование",
+        "title": "IST Банги — Академическая цифровая платформа",
+        "context_label": "Контекст",
+        "context": "Студентам нужен простой и надежный доступ к курсам, расписанию экзаменов и ресурсам даже в условиях нестабильного подключения.",
+        "problem_label": "Проблема",
+        "problem": "Централизовать академическую информацию и разрешить офлайн-доступ после синхронизации.",
+        "solution_label": "Решение",
+        "solution": "Платформа, объединяющая курсы, расписание экзаменов и загрузки, с офлайн-работой и синхронизацией.",
+        "features_label": "Ключевые функции",
+        "feature1": "Курсы и ресурсы",
+        "feature2": "Расписание экзаменов",
+        "feature3": "Загрузки",
+        "feature4": "Офлайн-работа",
+        "tech_label": "Технологии"
+      }
+    },
+    "offline": {
+      "eyebrow": "Offline-first",
+      "heading": "Даже без интернета<br>система продолжает работать.",
+      "lead": "Стабильное подключение не всегда гарантировано. Системы, которые я проектирую для реальных условий — полевые работы, мобильность, зоны с плохим покрытием — сохраняют локальные данные и синхронизируются при возвращении сети без потери информации.",
+      "online": "Онлайн",
+      "sync": "Синхронизация",
+      "local": "Локальное хранение",
+      "offline": "Офлайн",
+      "work": "Непрерывная работа",
+      "reconnect": "Подключение восстановлено",
+      "resync": "Синхронизация"
+    },
+    "security": {
+      "eyebrow": "Безопасность",
+      "heading": "Безопасность — это не функция.<br>Это основа.",
+      "lead": "Эти принципы определяют то, как я проектирую систему. Их точная реализация всегда зависит от контекста и реальных требований проекта.",
+      "pillar1": { "title": "Аутентификация", "desc": "Надежно проверять, кто получает доступ к системе." },
+      "pillar2": { "title": "Авторизация и роли", "desc": "Ограничивать доступ только необходимым." },
+      "pillar3": { "title": "Проверка данных", "desc": "Никогда не доверять слепо вводимым пользователем данным." },
+      "pillar4": { "title": "Журналирование", "desc": "Вести надежную запись чувствительных действий." },
+      "pillar5": { "title": "Защита данных", "desc": "Обращаться с конфиденциальной информацией строго." },
+      "pillar6": { "title": "Управление сессиями", "desc": "Ограничивать окно уязвимости в случае компрометации." }
+    },
+    "methodology": {
+      "eyebrow": "Методология",
+      "heading": "От идеи к системе.",
+      "step1": { "title": "Понять", "desc": "Определить реальную проблему для решения." },
+      "step2": { "title": "Проанализировать", "desc": "Понять пользователей и ограничения." },
+      "step3": { "title": "Спроектировать", "desc": "UX/UI, модель данных, архитектура." },
+      "step4": { "title": "Разработать", "desc": "Строить решение шаг за шагом." },
+      "step5": { "title": "Протестировать", "desc": "Надежность, безопасность и производительность." },
+      "step6": { "title": "Развернуть", "desc": "Внедрить систему в производство." },
+      "step7": { "title": "Развивать", "desc": "Обслуживание и постоянное улучшение." }
+    },
+    "capabilities": {
+      "eyebrow": "Области деятельности",
+      "heading": "Что я могу построить.",
+      "web": { "title": "Веб-приложения", "desc": "Бизнес-приложения и веб-платформы, разработанные для реальных задач." },
+      "mobile": { "title": "Мобильные приложения", "desc": "Приложения для Android / iOS, разработанные с Flutter." },
+      "business": { "title": "Бизнес-системы", "desc": "Решения, адаптированные к реальным процессам организаций." },
+      "api": { "title": "API и Backend", "desc": "Надежные, структурированные и документированные бэкенд-сервисы." },
+      "digital": { "title": "Цифровизация", "desc": "Преобразование ручных процессов в цифровые решения." },
+      "offline": { "title": "Offline-first", "desc": "Системы, способные работать с ограниченным подключением." }
+    },
+    "parcours": {
+      "eyebrow": "Путь",
+      "heading": "Образование и опыт.",
+      "education": {
+        "date": "2021 — 2025",
+        "title": "Профессиональный бакалавр в области управленческих информационных технологий",
+        "school": "Высший технологический институт (IST) — Банги, ЦАР",
+        "desc": "Междисциплинарное обучение, охватывающее компьютерные сети, разработку, базы данных и управление бизнесом. Специализация в области управленческих информационных технологий."
+      },
+      "internship": {
+        "date": "2026",
+        "title": "Академическая стажировка — Full-Stack разработчик",
+        "company": "RcaSoft — Банги, ЦАР",
+        "desc": "Разработка программных решений для управления бизнесом. Участие в проектах цифровизации и архитектуры программного обеспечения."
+      },
+      "current": {
+        "date": "2026 — Настоящее время",
+        "title": "Full-Stack разработчик и архитектор решений",
+        "company": "RcaSoft — Банги, ЦАР",
+        "desc": "Разработка веб-приложений, мобильных приложений и бизнес-систем. Специализация в офлайн-архитектурах, безопасности и цифровизации процессов.",
+        "projects_label": "Ключевые проекты:",
+        "projects": "SIFGC (Управление бухгалтерией), SINA-RCA (Сельскохозяйственная система), SNICGTM (Идентификация такси-мото), Распознавание лиц, Управление рынком. Проект цифрового управления государственным сектором (PGNSP) в области компьютерных сетей"
+      },
+      "certs": {
+        "date": "В процессе",
+        "title": "Сертификаты Cisco — Сети и кибербезопасность",
+        "school": "Cisco Networking Academy",
+        "desc": "Получение сертификатов в области компьютерных сетей и кибербезопасности для укрепления навыков в инфраструктуре и безопасности систем."
+      }
+    },
+    "cert": {
+      "roadmap": {
+        "title": "Дорожная карта — Целевые сертификаты",
+        "note": "Сертификаты, выбранные для укрепления моего профиля в области безопасности и разработки. Ни один не получен на сегодняшний день — отсортированы по приоритету."
+      },
+      "table": { "priority": "Приоритет", "cert": "Сертификат", "why": "Почему" },
+      "row1": { "why": "Полностью бесплатный — очень признан в отрасли" },
+      "row2": { "why": "Бесплатный, очень полный, реальные проекты для портфолио" },
+      "row3": { "why": "Дополняет сертификаты Cisco в процессе" },
+      "row4": { "why": "Признание в сетевой безопасности, 100% бесплатно" }
+    },
+    "trust": {
+      "eyebrow": "Почему стоит доверять мне",
+      "heading": "Системно-ориентированный подход.",
+      "pillar1": { "title": "Архитектура", "desc": "Строить на прочном фундаменте." },
+      "pillar2": { "title": "Надежность", "desc": "Учитывать реальные случаи и полевые ограничения." },
+      "pillar3": { "title": "Безопасность", "desc": "Интегрировать безопасность с этапа проектирования." },
+      "pillar4": { "title": "Масштабируемость", "desc": "Создавать решения, способные развиваться." }
+    },
+    "gallery": {
+      "eyebrow": "Галерея",
+      "heading": "Некоторые из моих визуальных работ.",
+      "lead": "Подборка изображений, иллюстрирующих мои проекты, интерфейсы и достижения.",
+      "tag": { "architecture": "Архитектура" },
+      "desc": { "architecture": "Схема архитектуры систем" },
+      "note": "Добавьте свои изображения в папку",
+      "items": [
+        {
+          "id": "gallery1",
+          "title": "Панель управления SIFGC",
+          "description": "Главный интерфейс системы управления",
+          "image": "projet1.jpg",
+          "category": "Business"
+        },
+        {
+          "id": "gallery2",
+          "title": "Архитектура SINA-RCA",
+          "description": "Схема архитектуры сельскохозяйственной системы",
+          "image": "projet2.jpg",
+          "category": "Architecture"
+        },
+        {
+          "id": "gallery3",
+          "title": "Распознавание лиц",
+          "description": "Интерфейс распознавания лиц",
+          "image": "projet3.jpg",
+          "category": "Security"
+        },
+        {
+          "id": "gallery4",
+          "title": "Мобильное приложение IST",
+          "description": "Образовательное приложение офлайн",
+          "image": "projet4.jpg",
+          "category": "Mobile"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Контакты",
+      "heading": "Есть проблема, которую нужно решить?",
+      "lead": "Давайте обсудим вашу идею, проект или цифровую проблему, которую вы хотите решить.",
+      "email_label": "Email",
+      "phone_label": "Телефон",
+      "location_label": "Местоположение",
+      "location": "Банги, Центральноафриканская Республика",
+      "form": { "name": "Имя", "email": "Email", "subject": "Тема", "message": "Сообщение", "submit": "Отправить сообщение" }
+    },
+    "footer": { "title": "Full-Stack разработчик и архитектор цифровых решений", "tagline": "Строить. Защищать. Развивать." }
+  }
+}
