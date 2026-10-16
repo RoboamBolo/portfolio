@@ -689,6 +689,7 @@
                     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
                         <p class="sub" style="margin:0;">Gérez vos images de galerie</p>
                         <button class="action-btn" onclick="openGalleryForm()"><i class="fas fa-plus"></i> Ajouter une image</button>
+                        <button class="action-btn secondary" onclick="exportForPublish()"><i class="fas fa-download"></i> Exporter pour publier</button>
                     </div>
                     <div class="table-wrap" id="gallery-list">
                         <!-- Rempli par JS -->
@@ -1410,6 +1411,32 @@
     function closeGalleryForm() {
         document.getElementById('galleryModal').style.display = 'none';
         selectedFileData = null;
+    }
+
+    // 📦 Export pour publication (content.json + images)
+    function exportForPublish() {
+        const bundle = { content: JSON.parse(JSON.stringify(contentData)), images: {} };
+        const en = (bundle.content.en && bundle.content.en.gallery && bundle.content.en.gallery.items) || [];
+        en.forEach(function(item) {
+            const data = localStorage.getItem('gallery_image_' + item.id);
+            if (data && data.indexOf('data:image') === 0) bundle.images[item.image] = data;
+        });
+        Object.keys(bundle.content).forEach(function(lang) {
+            if (lang === 'en') return;
+            const g = bundle.content[lang].gallery = bundle.content[lang].gallery || {};
+            const items = g.items = g.items || [];
+            en.forEach(function(it) {
+                if (!items.some(function(x) { return x.id === it.id; })) items.push(Object.assign({}, it));
+            });
+        });
+        const blob = new Blob([JSON.stringify(bundle)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'portfolio-export.json';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        showStatus('✅ Export téléchargé : portfolio-export.json', 'success');
     }
 
     // 📸 Gestion de l'upload

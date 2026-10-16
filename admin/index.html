@@ -135,14 +135,14 @@
             ❌ Email ou mot de passe incorrect
         </div>
         
-        <form id="login-form">
+        <form id="login-form" autocomplete="off">
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="votre@email.com" required>
+                <input type="email" id="email" name="admin-user-field" autocomplete="off" autocapitalize="off" spellcheck="false" readonly onfocus="this.removeAttribute('readonly')" placeholder="votre@email.com" required>
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label>
-                <input type="password" id="password" placeholder="••••••••" required>
+                <input type="password" id="password" name="admin-secret-field" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" placeholder="••••••••" required>
             </div>
             <button type="submit" class="login-btn">Se connecter</button>
         </form>
@@ -151,18 +151,30 @@
     </div>
 
     <script>
-        // Identifiants de connexion (à changer en production)
-        const ADMIN_EMAIL = 'admin@portfolio.com';
-        const ADMIN_PASSWORD = 'Portfolio2026!';
+        // Vérification par empreinte (hash)
+        const ADMIN_SALT = 'rb-portfolio-admin-v1';
+        const ADMIN_HASH = 'edb4e800476c040d9f5844704562bccac92a37e78a146664803a3bad33ede33d';
+        async function sha256Hex(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('');}
         
-        document.getElementById('login-form').addEventListener('submit', function(e) {
+        // Vide les champs : empêche le remplissage automatique du navigateur
+        function clearLoginFields() {
+            ['email', 'password'].forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.value = '';
+            });
+        }
+        window.addEventListener('pageshow', clearLoginFields);
+        setTimeout(clearLoginFields, 100);
+        setTimeout(clearLoginFields, 600);
+
+        document.getElementById('login-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             const errorMsg = document.getElementById('error-message');
             
-            if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
+            if (await sha256Hex(ADMIN_SALT + ':' + String(email).trim().toLowerCase() + ':' + password) === ADMIN_HASH) {
                 // Connexion réussie
                 localStorage.setItem('adminLoggedIn', 'true');
                 localStorage.setItem('adminEmail', email);
