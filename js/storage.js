@@ -2,6 +2,9 @@
 const StorageManager = {
     // Clé utilisée dans localStorage
     STORAGE_KEY: 'portfolio_data',
+    VERSION_KEY: 'portfolio_data_version',
+    // À changer à chaque modification de data/content.json
+    DATA_VERSION: '2026-10-16-1',
     
     // Données en mémoire
     _data: null,
@@ -10,7 +13,7 @@ const StorageManager = {
     load() {
         // 1. Essayer depuis localStorage
         const cached = localStorage.getItem(this.STORAGE_KEY);
-        if (cached) {
+        if (cached && localStorage.getItem(this.VERSION_KEY) === this.DATA_VERSION) {
             try {
                 this._data = JSON.parse(cached);
                 console.log('📦 Données chargées depuis localStorage');
@@ -33,6 +36,7 @@ const StorageManager = {
             this._data = data;
             // Sauvegarder dans localStorage
             localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data));
+            localStorage.setItem(this.VERSION_KEY, this.DATA_VERSION);
             console.log('📦 Données chargées depuis content.json');
             return data;
         } catch (error) {
@@ -48,6 +52,7 @@ const StorageManager = {
     save(data) {
         this._data = data;
         localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data));
+        localStorage.setItem(this.VERSION_KEY, this.DATA_VERSION);
         console.log('💾 Données sauvegardées dans localStorage');
         return true;
     },
