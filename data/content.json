@@ -1,6 +1,8 @@
 {
   "fr": {
-    "site": { "title": "Roboam Bolossilia - Développeur Full-Stack & Architecte de Solutions" },
+    "site": {
+      "title": "Roboam Bolossilia - Développeur Full-Stack & Architecte de Solutions"
+    },
     "nav": {
       "home": "Accueil",
       "about": "Profil",
@@ -48,12 +50,30 @@
     "skills": {
       "eyebrow": "Compétences",
       "heading": "Les technologies, et le rôle qu'elles jouent<br>dans une architecture.",
-      "front": { "title": "Front-end", "role": "Ce que l'utilisateur voit et manipule." },
-      "back": { "title": "Back-end", "role": "La logique métier et les règles du système." },
-      "mobile": { "title": "Mobile", "role": "L'accès au système en mobilité, y compris hors ligne." },
-      "data": { "title": "Données", "role": "Le stockage et l'intégrité de l'information." },
-      "arch": { "title": "Architecture", "role": "La structure qui rend le système fiable et évolutif." },
-      "tools": { "title": "Outils", "role": "L'environnement de travail et de collaboration." }
+      "front": {
+        "title": "Front-end",
+        "role": "Ce que l'utilisateur voit et manipule."
+      },
+      "back": {
+        "title": "Back-end",
+        "role": "La logique métier et les règles du système."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "role": "L'accès au système en mobilité, y compris hors ligne."
+      },
+      "data": {
+        "title": "Données",
+        "role": "Le stockage et l'intégrité de l'information."
+      },
+      "arch": {
+        "title": "Architecture",
+        "role": "La structure qui rend le système fiable et évolutif."
+      },
+      "tools": {
+        "title": "Outils",
+        "role": "L'environnement de travail et de collaboration."
+      }
     },
     "architecture": {
       "eyebrow": "Architecture",
@@ -72,7 +92,9 @@
     "projects": {
       "eyebrow": "Projets",
       "heading": "Des idées transformées en systèmes.",
-      "status": { "tbd": "Statut à confirmer" },
+      "status": {
+        "tbd": "Statut à confirmer"
+      },
       "sifgc": {
         "eyebrow": "Système métier — Gestion & comptabilité",
         "title": "SIFGC — Système Intégré de Facturation et de Gestion Comptable",
@@ -155,6 +177,32 @@
         "feature3": "Téléchargements",
         "feature4": "Fonctionnement hors ligne",
         "tech_label": "Technologies"
+      },
+      "busrca": {
+        "eyebrow": "Application mobile",
+        "title": "BusRCA",
+        "description": "Application mobile BusRCA.",
+        "technologies": [
+          "JavaScript",
+          "Mobile"
+        ],
+        "link": "https://github.com/RoboamBolo/busrca-mobile"
+      },
+      "queenp": {
+        "eyebrow": "Application interne",
+        "title": "QUEENP Starlink Manager",
+        "description": "Application interne QUEENP Starlink Manager.",
+        "technologies": [
+          "TypeScript"
+        ]
+      },
+      "grandlivre": {
+        "eyebrow": "Comptabilité",
+        "title": "Grand Livre Accounting",
+        "description": "Application de comptabilité autour du grand livre.",
+        "technologies": [
+          "TypeScript"
+        ]
       }
     },
     "offline": {
@@ -173,33 +221,90 @@
       "eyebrow": "Sécurité",
       "heading": "La sécurité n'est pas une fonctionnalité.<br>C'est une fondation.",
       "lead": "Ces principes guident la façon dont je conçois un système. Leur mise en œuvre précise dépend toujours du contexte et des exigences réelles du projet.",
-      "pillar1": { "title": "Authentification", "desc": "Vérifier de façon fiable qui accède au système." },
-      "pillar2": { "title": "Autorisations & rôles", "desc": "Limiter chaque accès à ce qui est réellement nécessaire." },
-      "pillar3": { "title": "Validation des données", "desc": "Ne jamais faire confiance aveuglément à une entrée utilisateur." },
-      "pillar4": { "title": "Journalisation", "desc": "Garder une trace fiable des actions sensibles." },
-      "pillar5": { "title": "Protection des données", "desc": "Traiter les informations sensibles avec rigueur." },
-      "pillar6": { "title": "Gestion des sessions", "desc": "Limiter la fenêtre d'exposition en cas de compromission." }
+      "pillar1": {
+        "title": "Authentification",
+        "desc": "Vérifier de façon fiable qui accède au système."
+      },
+      "pillar2": {
+        "title": "Autorisations & rôles",
+        "desc": "Limiter chaque accès à ce qui est réellement nécessaire."
+      },
+      "pillar3": {
+        "title": "Validation des données",
+        "desc": "Ne jamais faire confiance aveuglément à une entrée utilisateur."
+      },
+      "pillar4": {
+        "title": "Journalisation",
+        "desc": "Garder une trace fiable des actions sensibles."
+      },
+      "pillar5": {
+        "title": "Protection des données",
+        "desc": "Traiter les informations sensibles avec rigueur."
+      },
+      "pillar6": {
+        "title": "Gestion des sessions",
+        "desc": "Limiter la fenêtre d'exposition en cas de compromission."
+      }
     },
     "methodology": {
       "eyebrow": "Méthodologie",
       "heading": "De l'idée au système.",
-      "step1": { "title": "Comprendre", "desc": "Identifier le problème réel à résoudre." },
-      "step2": { "title": "Analyser", "desc": "Comprendre les utilisateurs et les contraintes." },
-      "step3": { "title": "Concevoir", "desc": "UX/UI, modèle de données, architecture." },
-      "step4": { "title": "Développer", "desc": "Construire la solution étape par étape." },
-      "step5": { "title": "Tester", "desc": "Fiabilité, sécurité et performance." },
-      "step6": { "title": "Déployer", "desc": "Mettre le système en production." },
-      "step7": { "title": "Faire évoluer", "desc": "Maintenance et amélioration continue." }
+      "step1": {
+        "title": "Comprendre",
+        "desc": "Identifier le problème réel à résoudre."
+      },
+      "step2": {
+        "title": "Analyser",
+        "desc": "Comprendre les utilisateurs et les contraintes."
+      },
+      "step3": {
+        "title": "Concevoir",
+        "desc": "UX/UI, modèle de données, architecture."
+      },
+      "step4": {
+        "title": "Développer",
+        "desc": "Construire la solution étape par étape."
+      },
+      "step5": {
+        "title": "Tester",
+        "desc": "Fiabilité, sécurité et performance."
+      },
+      "step6": {
+        "title": "Déployer",
+        "desc": "Mettre le système en production."
+      },
+      "step7": {
+        "title": "Faire évoluer",
+        "desc": "Maintenance et amélioration continue."
+      }
     },
     "capabilities": {
       "eyebrow": "Domaines d'intervention",
       "heading": "Ce que je peux construire.",
-      "web": { "title": "Applications web", "desc": "Applications métiers et plateformes web pensées pour des usages réels." },
-      "mobile": { "title": "Applications mobiles", "desc": "Applications Android / iOS développées avec Flutter." },
-      "business": { "title": "Systèmes métiers", "desc": "Solutions adaptées aux processus réels des organisations." },
-      "api": { "title": "API & Backend", "desc": "Services backend robustes, structurés et documentés." },
-      "digital": { "title": "Digitalisation", "desc": "Transformation de processus manuels en solutions numériques." },
-      "offline": { "title": "Offline-first", "desc": "Systèmes capables de fonctionner avec une connectivité limitée." }
+      "web": {
+        "title": "Applications web",
+        "desc": "Applications métiers et plateformes web pensées pour des usages réels."
+      },
+      "mobile": {
+        "title": "Applications mobiles",
+        "desc": "Applications Android / iOS développées avec Flutter."
+      },
+      "business": {
+        "title": "Systèmes métiers",
+        "desc": "Solutions adaptées aux processus réels des organisations."
+      },
+      "api": {
+        "title": "API & Backend",
+        "desc": "Services backend robustes, structurés et documentés."
+      },
+      "digital": {
+        "title": "Digitalisation",
+        "desc": "Transformation de processus manuels en solutions numériques."
+      },
+      "offline": {
+        "title": "Offline-first",
+        "desc": "Systèmes capables de fonctionner avec une connectivité limitée."
+      }
     },
     "parcours": {
       "eyebrow": "Parcours",
@@ -236,26 +341,54 @@
         "title": "Feuille de route — Certifications visées",
         "note": "Certifications identifiées pour renforcer mon profil en sécurité et en développement. Aucune n'est obtenue à ce jour — classées par ordre de priorité."
       },
-      "table": { "priority": "Priorité", "cert": "Certification", "why": "Pourquoi" },
-      "row1": { "why": "Totalement gratuite — très reconnue dans le secteur" },
-      "row2": { "why": "Gratuit, très complet, projets concrets pour le portfolio" },
-      "row3": { "why": "Complète les certifications Cisco en cours" },
-      "row4": { "why": "Reconnaissance en sécurité réseau, 100% gratuit" }
+      "table": {
+        "priority": "Priorité",
+        "cert": "Certification",
+        "why": "Pourquoi"
+      },
+      "row1": {
+        "why": "Totalement gratuite — très reconnue dans le secteur"
+      },
+      "row2": {
+        "why": "Gratuit, très complet, projets concrets pour le portfolio"
+      },
+      "row3": {
+        "why": "Complète les certifications Cisco en cours"
+      },
+      "row4": {
+        "why": "Reconnaissance en sécurité réseau, 100% gratuit"
+      }
     },
     "trust": {
       "eyebrow": "Pourquoi me faire confiance",
       "heading": "Une approche orientée système.",
-      "pillar1": { "title": "Architecture", "desc": "Construire sur des fondations solides." },
-      "pillar2": { "title": "Fiabilité", "desc": "Penser aux cas réels et aux contraintes du terrain." },
-      "pillar3": { "title": "Sécurité", "desc": "Intégrer la sécurité dès la conception." },
-      "pillar4": { "title": "Évolutivité", "desc": "Construire des solutions capables d'évoluer." }
+      "pillar1": {
+        "title": "Architecture",
+        "desc": "Construire sur des fondations solides."
+      },
+      "pillar2": {
+        "title": "Fiabilité",
+        "desc": "Penser aux cas réels et aux contraintes du terrain."
+      },
+      "pillar3": {
+        "title": "Sécurité",
+        "desc": "Intégrer la sécurité dès la conception."
+      },
+      "pillar4": {
+        "title": "Évolutivité",
+        "desc": "Construire des solutions capables d'évoluer."
+      }
     },
     "gallery": {
       "eyebrow": "Galerie",
       "heading": "Quelques-uns de mes travaux visuels.",
       "lead": "Une sélection d'images illustrant mes projets, mes interfaces et mes réalisations.",
-      "tag": { "architecture": "Architecture" },
-      "desc": { "architecture": "Schéma d'architecture des systèmes" },
+      "tag": {
+        "architecture": "Architecture"
+      },
+      "desc": {
+        "architecture": "Schéma d'architecture des systèmes"
+      },
       "note": "Ajoutez vos propres images dans le dossier",
       "items": [
         {
@@ -296,12 +429,23 @@
       "phone_label": "Téléphone",
       "location_label": "Localisation",
       "location": "Bangui, République centrafricaine",
-      "form": { "name": "Nom", "email": "Email", "subject": "Sujet", "message": "Message", "submit": "Envoyer le message" }
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "submit": "Envoyer le message"
+      }
     },
-    "footer": { "title": "Full-Stack Developer & Digital Solutions Architect", "tagline": "Construire. Sécuriser. Faire évoluer." }
+    "footer": {
+      "title": "Full-Stack Developer & Digital Solutions Architect",
+      "tagline": "Construire. Sécuriser. Faire évoluer."
+    }
   },
   "en": {
-    "site": { "title": "Roboam Bolossilia - Full-Stack Developer & Digital Solutions Architect" },
+    "site": {
+      "title": "Roboam Bolossilia - Full-Stack Developer & Digital Solutions Architect"
+    },
     "nav": {
       "home": "Home",
       "about": "Profile",
@@ -349,12 +493,30 @@
     "skills": {
       "eyebrow": "Skills",
       "heading": "Technologies and the role they play<br>in an architecture.",
-      "front": { "title": "Front-end", "role": "What the user sees and interacts with." },
-      "back": { "title": "Back-end", "role": "The business logic and system rules." },
-      "mobile": { "title": "Mobile", "role": "Access to the system on the move, including offline." },
-      "data": { "title": "Data", "role": "Storage and integrity of information." },
-      "arch": { "title": "Architecture", "role": "The structure that makes the system reliable and scalable." },
-      "tools": { "title": "Tools", "role": "The work and collaboration environment." }
+      "front": {
+        "title": "Front-end",
+        "role": "What the user sees and interacts with."
+      },
+      "back": {
+        "title": "Back-end",
+        "role": "The business logic and system rules."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "role": "Access to the system on the move, including offline."
+      },
+      "data": {
+        "title": "Data",
+        "role": "Storage and integrity of information."
+      },
+      "arch": {
+        "title": "Architecture",
+        "role": "The structure that makes the system reliable and scalable."
+      },
+      "tools": {
+        "title": "Tools",
+        "role": "The work and collaboration environment."
+      }
     },
     "architecture": {
       "eyebrow": "Architecture",
@@ -373,7 +535,9 @@
     "projects": {
       "eyebrow": "Projects",
       "heading": "Ideas transformed into systems.",
-      "status": { "tbd": "Status to be confirmed" },
+      "status": {
+        "tbd": "Status to be confirmed"
+      },
       "sifgc": {
         "eyebrow": "Business system — Invoicing & accounting",
         "title": "SIFGC — Integrated Invoicing and Accounting Management System",
@@ -456,6 +620,32 @@
         "feature3": "Downloads",
         "feature4": "Offline operation",
         "tech_label": "Technologies"
+      },
+      "busrca": {
+        "eyebrow": "Mobile application",
+        "title": "BusRCA",
+        "description": "BusRCA mobile application.",
+        "technologies": [
+          "JavaScript",
+          "Mobile"
+        ],
+        "link": "https://github.com/RoboamBolo/busrca-mobile"
+      },
+      "queenp": {
+        "eyebrow": "Internal application",
+        "title": "QUEENP Starlink Manager",
+        "description": "Internal QUEENP Starlink Manager application.",
+        "technologies": [
+          "TypeScript"
+        ]
+      },
+      "grandlivre": {
+        "eyebrow": "Accounting",
+        "title": "Grand Livre Accounting",
+        "description": "Accounting application built around the general ledger.",
+        "technologies": [
+          "TypeScript"
+        ]
       }
     },
     "offline": {
@@ -474,33 +664,90 @@
       "eyebrow": "Security",
       "heading": "Security is not a feature.<br>It's a foundation.",
       "lead": "These principles guide how I design a system. Their precise implementation always depends on the context and real project requirements.",
-      "pillar1": { "title": "Authentication", "desc": "Reliably verify who accesses the system." },
-      "pillar2": { "title": "Authorization & roles", "desc": "Limit each access to what is strictly necessary." },
-      "pillar3": { "title": "Data validation", "desc": "Never blindly trust user input." },
-      "pillar4": { "title": "Logging", "desc": "Keep a reliable record of sensitive actions." },
-      "pillar5": { "title": "Data protection", "desc": "Handle sensitive information with rigor." },
-      "pillar6": { "title": "Session management", "desc": "Limit the exposure window in case of compromise." }
+      "pillar1": {
+        "title": "Authentication",
+        "desc": "Reliably verify who accesses the system."
+      },
+      "pillar2": {
+        "title": "Authorization & roles",
+        "desc": "Limit each access to what is strictly necessary."
+      },
+      "pillar3": {
+        "title": "Data validation",
+        "desc": "Never blindly trust user input."
+      },
+      "pillar4": {
+        "title": "Logging",
+        "desc": "Keep a reliable record of sensitive actions."
+      },
+      "pillar5": {
+        "title": "Data protection",
+        "desc": "Handle sensitive information with rigor."
+      },
+      "pillar6": {
+        "title": "Session management",
+        "desc": "Limit the exposure window in case of compromise."
+      }
     },
     "methodology": {
       "eyebrow": "Methodology",
       "heading": "From idea to system.",
-      "step1": { "title": "Understand", "desc": "Identify the real problem to solve." },
-      "step2": { "title": "Analyze", "desc": "Understand users and constraints." },
-      "step3": { "title": "Design", "desc": "UX/UI, data model, architecture." },
-      "step4": { "title": "Develop", "desc": "Build the solution step by step." },
-      "step5": { "title": "Test", "desc": "Reliability, security and performance." },
-      "step6": { "title": "Deploy", "desc": "Put the system into production." },
-      "step7": { "title": "Evolve", "desc": "Maintenance and continuous improvement." }
+      "step1": {
+        "title": "Understand",
+        "desc": "Identify the real problem to solve."
+      },
+      "step2": {
+        "title": "Analyze",
+        "desc": "Understand users and constraints."
+      },
+      "step3": {
+        "title": "Design",
+        "desc": "UX/UI, data model, architecture."
+      },
+      "step4": {
+        "title": "Develop",
+        "desc": "Build the solution step by step."
+      },
+      "step5": {
+        "title": "Test",
+        "desc": "Reliability, security and performance."
+      },
+      "step6": {
+        "title": "Deploy",
+        "desc": "Put the system into production."
+      },
+      "step7": {
+        "title": "Evolve",
+        "desc": "Maintenance and continuous improvement."
+      }
     },
     "capabilities": {
       "eyebrow": "Areas of intervention",
       "heading": "What I can build.",
-      "web": { "title": "Web applications", "desc": "Business applications and web platforms designed for real uses." },
-      "mobile": { "title": "Mobile applications", "desc": "Android / iOS applications developed with Flutter." },
-      "business": { "title": "Business systems", "desc": "Solutions adapted to the real processes of organizations." },
-      "api": { "title": "API & Backend", "desc": "Robust, structured and documented backend services." },
-      "digital": { "title": "Digitalization", "desc": "Transformation of manual processes into digital solutions." },
-      "offline": { "title": "Offline-first", "desc": "Systems capable of operating with limited connectivity." }
+      "web": {
+        "title": "Web applications",
+        "desc": "Business applications and web platforms designed for real uses."
+      },
+      "mobile": {
+        "title": "Mobile applications",
+        "desc": "Android / iOS applications developed with Flutter."
+      },
+      "business": {
+        "title": "Business systems",
+        "desc": "Solutions adapted to the real processes of organizations."
+      },
+      "api": {
+        "title": "API & Backend",
+        "desc": "Robust, structured and documented backend services."
+      },
+      "digital": {
+        "title": "Digitalization",
+        "desc": "Transformation of manual processes into digital solutions."
+      },
+      "offline": {
+        "title": "Offline-first",
+        "desc": "Systems capable of operating with limited connectivity."
+      }
     },
     "parcours": {
       "eyebrow": "Path",
@@ -537,26 +784,54 @@
         "title": "Roadmap — Target certifications",
         "note": "Certifications identified to strengthen my profile in security and development. None have been obtained to date — ranked by priority."
       },
-      "table": { "priority": "Priority", "cert": "Certification", "why": "Why" },
-      "row1": { "why": "Completely free — highly recognized in the sector" },
-      "row2": { "why": "Free, very comprehensive, concrete projects for the portfolio" },
-      "row3": { "why": "Completes the Cisco certifications in progress" },
-      "row4": { "why": "Network security recognition, 100% free" }
+      "table": {
+        "priority": "Priority",
+        "cert": "Certification",
+        "why": "Why"
+      },
+      "row1": {
+        "why": "Completely free — highly recognized in the sector"
+      },
+      "row2": {
+        "why": "Free, very comprehensive, concrete projects for the portfolio"
+      },
+      "row3": {
+        "why": "Completes the Cisco certifications in progress"
+      },
+      "row4": {
+        "why": "Network security recognition, 100% free"
+      }
     },
     "trust": {
       "eyebrow": "Why trust me",
       "heading": "A system-oriented approach.",
-      "pillar1": { "title": "Architecture", "desc": "Build on solid foundations." },
-      "pillar2": { "title": "Reliability", "desc": "Think about real cases and field constraints." },
-      "pillar3": { "title": "Security", "desc": "Integrate security from the design stage." },
-      "pillar4": { "title": "Scalability", "desc": "Build solutions capable of evolving." }
+      "pillar1": {
+        "title": "Architecture",
+        "desc": "Build on solid foundations."
+      },
+      "pillar2": {
+        "title": "Reliability",
+        "desc": "Think about real cases and field constraints."
+      },
+      "pillar3": {
+        "title": "Security",
+        "desc": "Integrate security from the design stage."
+      },
+      "pillar4": {
+        "title": "Scalability",
+        "desc": "Build solutions capable of evolving."
+      }
     },
     "gallery": {
       "eyebrow": "Gallery",
       "heading": "Some of my visual works.",
       "lead": "A selection of images illustrating my projects, my interfaces and my achievements.",
-      "tag": { "architecture": "Architecture" },
-      "desc": { "architecture": "System architecture diagram" },
+      "tag": {
+        "architecture": "Architecture"
+      },
+      "desc": {
+        "architecture": "System architecture diagram"
+      },
       "note": "Add your own images in the folder",
       "items": [
         {
@@ -597,12 +872,23 @@
       "phone_label": "Phone",
       "location_label": "Location",
       "location": "Bangui, Central African Republic",
-      "form": { "name": "Name", "email": "Email", "subject": "Subject", "message": "Message", "submit": "Send message" }
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Send message"
+      }
     },
-    "footer": { "title": "Full-Stack Developer & Digital Solutions Architect", "tagline": "Build. Secure. Evolve." }
+    "footer": {
+      "title": "Full-Stack Developer & Digital Solutions Architect",
+      "tagline": "Build. Secure. Evolve."
+    }
   },
   "ar": {
-    "site": { "title": "روبوام بولوسيليا - مطور Full-Stack ومهندس حلول رقمية" },
+    "site": {
+      "title": "روبوام بولوسيليا - مطور Full-Stack ومهندس حلول رقمية"
+    },
     "nav": {
       "home": "الرئيسية",
       "about": "الملف الشخصي",
@@ -650,12 +936,30 @@
     "skills": {
       "eyebrow": "المهارات",
       "heading": "التقنيات والدور الذي تلعبه<br>في الهندسة.",
-      "front": { "title": "واجهة أمامية", "role": "ما يراه المستخدم ويتفاعل معه." },
-      "back": { "title": "خلفية", "role": "منطق الأعمال وقواعد النظام." },
-      "mobile": { "title": "تطبيقات جوال", "role": "الوصول إلى النظام أثناء التنقل، بما في ذلك دون اتصال." },
-      "data": { "title": "البيانات", "role": "تخزين المعلومات وسلامتها." },
-      "arch": { "title": "الهندسة", "role": "الهيكل الذي يجعل النظام موثوقاً وقابلاً للتوسع." },
-      "tools": { "title": "الأدوات", "role": "بيئة العمل والتعاون." }
+      "front": {
+        "title": "واجهة أمامية",
+        "role": "ما يراه المستخدم ويتفاعل معه."
+      },
+      "back": {
+        "title": "خلفية",
+        "role": "منطق الأعمال وقواعد النظام."
+      },
+      "mobile": {
+        "title": "تطبيقات جوال",
+        "role": "الوصول إلى النظام أثناء التنقل، بما في ذلك دون اتصال."
+      },
+      "data": {
+        "title": "البيانات",
+        "role": "تخزين المعلومات وسلامتها."
+      },
+      "arch": {
+        "title": "الهندسة",
+        "role": "الهيكل الذي يجعل النظام موثوقاً وقابلاً للتوسع."
+      },
+      "tools": {
+        "title": "الأدوات",
+        "role": "بيئة العمل والتعاون."
+      }
     },
     "architecture": {
       "eyebrow": "الهندسة",
@@ -674,7 +978,9 @@
     "projects": {
       "eyebrow": "المشاريع",
       "heading": "أفكار تحولت إلى أنظمة.",
-      "status": { "tbd": "الحالة قيد التأكيد" },
+      "status": {
+        "tbd": "الحالة قيد التأكيد"
+      },
       "sifgc": {
         "eyebrow": "نظام أعمال — الفوترة والمحاسبة",
         "title": "SIFGC — نظام متكامل للفوترة والإدارة المحاسبية",
@@ -757,6 +1063,32 @@
         "feature3": "التنزيلات",
         "feature4": "العمل دون اتصال",
         "tech_label": "التقنيات"
+      },
+      "busrca": {
+        "eyebrow": "تطبيق جوال",
+        "title": "BusRCA",
+        "description": "تطبيق BusRCA للهاتف المحمول.",
+        "technologies": [
+          "JavaScript",
+          "Mobile"
+        ],
+        "link": "https://github.com/RoboamBolo/busrca-mobile"
+      },
+      "queenp": {
+        "eyebrow": "تطبيق داخلي",
+        "title": "QUEENP Starlink Manager",
+        "description": "تطبيق داخلي QUEENP Starlink Manager.",
+        "technologies": [
+          "TypeScript"
+        ]
+      },
+      "grandlivre": {
+        "eyebrow": "المحاسبة",
+        "title": "Grand Livre Accounting",
+        "description": "تطبيق محاسبة قائم على دفتر الأستاذ العام.",
+        "technologies": [
+          "TypeScript"
+        ]
       }
     },
     "offline": {
@@ -775,33 +1107,90 @@
       "eyebrow": "الأمان",
       "heading": "الأمان ليس ميزة.<br>إنه أساس.",
       "lead": "هذه المبادئ توجه كيفية تصميمي للنظام. تنفيذها الدقيق يعتمد دائماً على السياق ومتطلبات المشروع الفعلية.",
-      "pillar1": { "title": "المصادقة", "desc": "التحقق بشكل موثوق من يصل إلى النظام." },
-      "pillar2": { "title": "التفويض والأدوار", "desc": "تحديد كل وصول إلى ما هو ضروري فقط." },
-      "pillar3": { "title": "التحقق من البيانات", "desc": "عدم الثقة بشكل أعمى في مدخلات المستخدم." },
-      "pillar4": { "title": "التسجيل", "desc": "الاحتفاظ بسجل موثوق للإجراءات الحساسة." },
-      "pillar5": { "title": "حماية البيانات", "desc": "معالجة المعلومات الحساسة بدقة." },
-      "pillar6": { "title": "إدارة الجلسات", "desc": "تحديد نافذة التعرض في حالة الاختراق." }
+      "pillar1": {
+        "title": "المصادقة",
+        "desc": "التحقق بشكل موثوق من يصل إلى النظام."
+      },
+      "pillar2": {
+        "title": "التفويض والأدوار",
+        "desc": "تحديد كل وصول إلى ما هو ضروري فقط."
+      },
+      "pillar3": {
+        "title": "التحقق من البيانات",
+        "desc": "عدم الثقة بشكل أعمى في مدخلات المستخدم."
+      },
+      "pillar4": {
+        "title": "التسجيل",
+        "desc": "الاحتفاظ بسجل موثوق للإجراءات الحساسة."
+      },
+      "pillar5": {
+        "title": "حماية البيانات",
+        "desc": "معالجة المعلومات الحساسة بدقة."
+      },
+      "pillar6": {
+        "title": "إدارة الجلسات",
+        "desc": "تحديد نافذة التعرض في حالة الاختراق."
+      }
     },
     "methodology": {
       "eyebrow": "المنهجية",
       "heading": "من الفكرة إلى النظام.",
-      "step1": { "title": "فهم", "desc": "تحديد المشكلة الحقيقية لحلها." },
-      "step2": { "title": "تحليل", "desc": "فهم المستخدمين والقيود." },
-      "step3": { "title": "تصميم", "desc": "تجربة المستخدم/واجهة المستخدم، نموذج البيانات، الهندسة." },
-      "step4": { "title": "تطوير", "desc": "بناء الحل خطوة بخطوة." },
-      "step5": { "title": "اختبار", "desc": "الموثوقية والأمان والأداء." },
-      "step6": { "title": "نشر", "desc": "وضع النظام في الإنتاج." },
-      "step7": { "title": "تطوير", "desc": "الصيانة والتحسين المستمر." }
+      "step1": {
+        "title": "فهم",
+        "desc": "تحديد المشكلة الحقيقية لحلها."
+      },
+      "step2": {
+        "title": "تحليل",
+        "desc": "فهم المستخدمين والقيود."
+      },
+      "step3": {
+        "title": "تصميم",
+        "desc": "تجربة المستخدم/واجهة المستخدم، نموذج البيانات، الهندسة."
+      },
+      "step4": {
+        "title": "تطوير",
+        "desc": "بناء الحل خطوة بخطوة."
+      },
+      "step5": {
+        "title": "اختبار",
+        "desc": "الموثوقية والأمان والأداء."
+      },
+      "step6": {
+        "title": "نشر",
+        "desc": "وضع النظام في الإنتاج."
+      },
+      "step7": {
+        "title": "تطوير",
+        "desc": "الصيانة والتحسين المستمر."
+      }
     },
     "capabilities": {
       "eyebrow": "مجالات التدخل",
       "heading": "ما يمكنني بناؤه.",
-      "web": { "title": "تطبيقات الويب", "desc": "تطبيقات أعمال ومنصات ويب مصممة لاستخدامات حقيقية." },
-      "mobile": { "title": "تطبيقات الجوال", "desc": "تطبيقات Android / iOS المطورة باستخدام Flutter." },
-      "business": { "title": "أنظمة الأعمال", "desc": "حلول مكيفة مع العمليات الحقيقية للمنظمات." },
-      "api": { "title": "API والخلفية", "desc": "خدمات خلفية قوية ومنظمة وموثقة." },
-      "digital": { "title": "الرقمنة", "desc": "تحويل العمليات اليدوية إلى حلول رقمية." },
-      "offline": { "title": "العمل دون اتصال أولاً", "desc": "أنظمة قادرة على العمل مع اتصال محدود." }
+      "web": {
+        "title": "تطبيقات الويب",
+        "desc": "تطبيقات أعمال ومنصات ويب مصممة لاستخدامات حقيقية."
+      },
+      "mobile": {
+        "title": "تطبيقات الجوال",
+        "desc": "تطبيقات Android / iOS المطورة باستخدام Flutter."
+      },
+      "business": {
+        "title": "أنظمة الأعمال",
+        "desc": "حلول مكيفة مع العمليات الحقيقية للمنظمات."
+      },
+      "api": {
+        "title": "API والخلفية",
+        "desc": "خدمات خلفية قوية ومنظمة وموثقة."
+      },
+      "digital": {
+        "title": "الرقمنة",
+        "desc": "تحويل العمليات اليدوية إلى حلول رقمية."
+      },
+      "offline": {
+        "title": "العمل دون اتصال أولاً",
+        "desc": "أنظمة قادرة على العمل مع اتصال محدود."
+      }
     },
     "parcours": {
       "eyebrow": "المسار",
@@ -838,26 +1227,54 @@
         "title": "خريطة الطريق — الشهادات المستهدفة",
         "note": "شهادات تم تحديدها لتعزيز ملفي في الأمان والتطوير. لم يتم الحصول على أي منها حتى الآن — مرتبة حسب الأولوية."
       },
-      "table": { "priority": "الأولوية", "cert": "الشهادة", "why": "لماذا" },
-      "row1": { "why": "مجانية تماماً — معترف بها بشدة في القطاع" },
-      "row2": { "why": "مجانية وشاملة جداً، مشاريع ملموسة للمحفظة" },
-      "row3": { "why": "تكمل شهادات سيسكو قيد الإنجاز" },
-      "row4": { "why": "اعتراف في أمان الشبكات، مجاني 100%" }
+      "table": {
+        "priority": "الأولوية",
+        "cert": "الشهادة",
+        "why": "لماذا"
+      },
+      "row1": {
+        "why": "مجانية تماماً — معترف بها بشدة في القطاع"
+      },
+      "row2": {
+        "why": "مجانية وشاملة جداً، مشاريع ملموسة للمحفظة"
+      },
+      "row3": {
+        "why": "تكمل شهادات سيسكو قيد الإنجاز"
+      },
+      "row4": {
+        "why": "اعتراف في أمان الشبكات، مجاني 100%"
+      }
     },
     "trust": {
       "eyebrow": "لماذا تثق بي",
       "heading": "نهج موجه نحو النظام.",
-      "pillar1": { "title": "الهندسة", "desc": "البناء على أسس صلبة." },
-      "pillar2": { "title": "الموثوقية", "desc": "التفكير في الحالات الحقيقية وقيود الميدان." },
-      "pillar3": { "title": "الأمان", "desc": "دمج الأمان من مرحلة التصميم." },
-      "pillar4": { "title": "قابلية التوسع", "desc": "بناء حلول قادرة على التطور." }
+      "pillar1": {
+        "title": "الهندسة",
+        "desc": "البناء على أسس صلبة."
+      },
+      "pillar2": {
+        "title": "الموثوقية",
+        "desc": "التفكير في الحالات الحقيقية وقيود الميدان."
+      },
+      "pillar3": {
+        "title": "الأمان",
+        "desc": "دمج الأمان من مرحلة التصميم."
+      },
+      "pillar4": {
+        "title": "قابلية التوسع",
+        "desc": "بناء حلول قادرة على التطور."
+      }
     },
     "gallery": {
       "eyebrow": "المعرض",
       "heading": "بعض أعمالي البصرية.",
       "lead": "مجموعة مختارة من الصور التي توضح مشاريعي وواجهاتي وإنجازاتي.",
-      "tag": { "architecture": "الهندسة" },
-      "desc": { "architecture": "مخطط هندسة الأنظمة" },
+      "tag": {
+        "architecture": "الهندسة"
+      },
+      "desc": {
+        "architecture": "مخطط هندسة الأنظمة"
+      },
       "note": "أضف صورك الخاصة في المجلد",
       "items": [
         {
@@ -898,12 +1315,23 @@
       "phone_label": "الهاتف",
       "location_label": "الموقع",
       "location": "بانغي، جمهورية أفريقيا الوسطى",
-      "form": { "name": "الاسم", "email": "البريد الإلكتروني", "subject": "الموضوع", "message": "الرسالة", "submit": "إرسال الرسالة" }
+      "form": {
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "subject": "الموضوع",
+        "message": "الرسالة",
+        "submit": "إرسال الرسالة"
+      }
     },
-    "footer": { "title": "مطور Full-Stack ومهندس حلول رقمية", "tagline": "بناء. تأمين. تطوير." }
+    "footer": {
+      "title": "مطور Full-Stack ومهندس حلول رقمية",
+      "tagline": "بناء. تأمين. تطوير."
+    }
   },
   "ru": {
-    "site": { "title": "Робоам Болоссилия - Full-Stack разработчик и архитектор цифровых решений" },
+    "site": {
+      "title": "Робоам Болоссилия - Full-Stack разработчик и архитектор цифровых решений"
+    },
     "nav": {
       "home": "Главная",
       "about": "Профиль",
@@ -951,12 +1379,30 @@
     "skills": {
       "eyebrow": "Навыки",
       "heading": "Технологии и их роль<br>в архитектуре.",
-      "front": { "title": "Front-end", "role": "Что видит и с чем взаимодействует пользователь." },
-      "back": { "title": "Back-end", "role": "Бизнес-логика и правила системы." },
-      "mobile": { "title": "Мобильные", "role": "Доступ к системе в движении, включая офлайн." },
-      "data": { "title": "Данные", "role": "Хранение и целостность информации." },
-      "arch": { "title": "Архитектура", "role": "Структура, которая делает систему надежной и масштабируемой." },
-      "tools": { "title": "Инструменты", "role": "Среда работы и сотрудничества." }
+      "front": {
+        "title": "Front-end",
+        "role": "Что видит и с чем взаимодействует пользователь."
+      },
+      "back": {
+        "title": "Back-end",
+        "role": "Бизнес-логика и правила системы."
+      },
+      "mobile": {
+        "title": "Мобильные",
+        "role": "Доступ к системе в движении, включая офлайн."
+      },
+      "data": {
+        "title": "Данные",
+        "role": "Хранение и целостность информации."
+      },
+      "arch": {
+        "title": "Архитектура",
+        "role": "Структура, которая делает систему надежной и масштабируемой."
+      },
+      "tools": {
+        "title": "Инструменты",
+        "role": "Среда работы и сотрудничества."
+      }
     },
     "architecture": {
       "eyebrow": "Архитектура",
@@ -975,7 +1421,9 @@
     "projects": {
       "eyebrow": "Проекты",
       "heading": "Идеи, превращенные в системы.",
-      "status": { "tbd": "Статус требует подтверждения" },
+      "status": {
+        "tbd": "Статус требует подтверждения"
+      },
       "sifgc": {
         "eyebrow": "Бизнес-система — Выставление счетов и бухгалтерия",
         "title": "SIFGC — Интегрированная система выставления счетов и бухгалтерского учета",
@@ -1058,6 +1506,32 @@
         "feature3": "Загрузки",
         "feature4": "Офлайн-работа",
         "tech_label": "Технологии"
+      },
+      "busrca": {
+        "eyebrow": "Мобильное приложение",
+        "title": "BusRCA",
+        "description": "Мобильное приложение BusRCA.",
+        "technologies": [
+          "JavaScript",
+          "Mobile"
+        ],
+        "link": "https://github.com/RoboamBolo/busrca-mobile"
+      },
+      "queenp": {
+        "eyebrow": "Внутреннее приложение",
+        "title": "QUEENP Starlink Manager",
+        "description": "Внутреннее приложение QUEENP Starlink Manager.",
+        "technologies": [
+          "TypeScript"
+        ]
+      },
+      "grandlivre": {
+        "eyebrow": "Бухгалтерия",
+        "title": "Grand Livre Accounting",
+        "description": "Бухгалтерское приложение на основе главной книги.",
+        "technologies": [
+          "TypeScript"
+        ]
       }
     },
     "offline": {
@@ -1076,33 +1550,90 @@
       "eyebrow": "Безопасность",
       "heading": "Безопасность — это не функция.<br>Это основа.",
       "lead": "Эти принципы определяют то, как я проектирую систему. Их точная реализация всегда зависит от контекста и реальных требований проекта.",
-      "pillar1": { "title": "Аутентификация", "desc": "Надежно проверять, кто получает доступ к системе." },
-      "pillar2": { "title": "Авторизация и роли", "desc": "Ограничивать доступ только необходимым." },
-      "pillar3": { "title": "Проверка данных", "desc": "Никогда не доверять слепо вводимым пользователем данным." },
-      "pillar4": { "title": "Журналирование", "desc": "Вести надежную запись чувствительных действий." },
-      "pillar5": { "title": "Защита данных", "desc": "Обращаться с конфиденциальной информацией строго." },
-      "pillar6": { "title": "Управление сессиями", "desc": "Ограничивать окно уязвимости в случае компрометации." }
+      "pillar1": {
+        "title": "Аутентификация",
+        "desc": "Надежно проверять, кто получает доступ к системе."
+      },
+      "pillar2": {
+        "title": "Авторизация и роли",
+        "desc": "Ограничивать доступ только необходимым."
+      },
+      "pillar3": {
+        "title": "Проверка данных",
+        "desc": "Никогда не доверять слепо вводимым пользователем данным."
+      },
+      "pillar4": {
+        "title": "Журналирование",
+        "desc": "Вести надежную запись чувствительных действий."
+      },
+      "pillar5": {
+        "title": "Защита данных",
+        "desc": "Обращаться с конфиденциальной информацией строго."
+      },
+      "pillar6": {
+        "title": "Управление сессиями",
+        "desc": "Ограничивать окно уязвимости в случае компрометации."
+      }
     },
     "methodology": {
       "eyebrow": "Методология",
       "heading": "От идеи к системе.",
-      "step1": { "title": "Понять", "desc": "Определить реальную проблему для решения." },
-      "step2": { "title": "Проанализировать", "desc": "Понять пользователей и ограничения." },
-      "step3": { "title": "Спроектировать", "desc": "UX/UI, модель данных, архитектура." },
-      "step4": { "title": "Разработать", "desc": "Строить решение шаг за шагом." },
-      "step5": { "title": "Протестировать", "desc": "Надежность, безопасность и производительность." },
-      "step6": { "title": "Развернуть", "desc": "Внедрить систему в производство." },
-      "step7": { "title": "Развивать", "desc": "Обслуживание и постоянное улучшение." }
+      "step1": {
+        "title": "Понять",
+        "desc": "Определить реальную проблему для решения."
+      },
+      "step2": {
+        "title": "Проанализировать",
+        "desc": "Понять пользователей и ограничения."
+      },
+      "step3": {
+        "title": "Спроектировать",
+        "desc": "UX/UI, модель данных, архитектура."
+      },
+      "step4": {
+        "title": "Разработать",
+        "desc": "Строить решение шаг за шагом."
+      },
+      "step5": {
+        "title": "Протестировать",
+        "desc": "Надежность, безопасность и производительность."
+      },
+      "step6": {
+        "title": "Развернуть",
+        "desc": "Внедрить систему в производство."
+      },
+      "step7": {
+        "title": "Развивать",
+        "desc": "Обслуживание и постоянное улучшение."
+      }
     },
     "capabilities": {
       "eyebrow": "Области деятельности",
       "heading": "Что я могу построить.",
-      "web": { "title": "Веб-приложения", "desc": "Бизнес-приложения и веб-платформы, разработанные для реальных задач." },
-      "mobile": { "title": "Мобильные приложения", "desc": "Приложения для Android / iOS, разработанные с Flutter." },
-      "business": { "title": "Бизнес-системы", "desc": "Решения, адаптированные к реальным процессам организаций." },
-      "api": { "title": "API и Backend", "desc": "Надежные, структурированные и документированные бэкенд-сервисы." },
-      "digital": { "title": "Цифровизация", "desc": "Преобразование ручных процессов в цифровые решения." },
-      "offline": { "title": "Offline-first", "desc": "Системы, способные работать с ограниченным подключением." }
+      "web": {
+        "title": "Веб-приложения",
+        "desc": "Бизнес-приложения и веб-платформы, разработанные для реальных задач."
+      },
+      "mobile": {
+        "title": "Мобильные приложения",
+        "desc": "Приложения для Android / iOS, разработанные с Flutter."
+      },
+      "business": {
+        "title": "Бизнес-системы",
+        "desc": "Решения, адаптированные к реальным процессам организаций."
+      },
+      "api": {
+        "title": "API и Backend",
+        "desc": "Надежные, структурированные и документированные бэкенд-сервисы."
+      },
+      "digital": {
+        "title": "Цифровизация",
+        "desc": "Преобразование ручных процессов в цифровые решения."
+      },
+      "offline": {
+        "title": "Offline-first",
+        "desc": "Системы, способные работать с ограниченным подключением."
+      }
     },
     "parcours": {
       "eyebrow": "Путь",
@@ -1139,26 +1670,54 @@
         "title": "Дорожная карта — Целевые сертификаты",
         "note": "Сертификаты, выбранные для укрепления моего профиля в области безопасности и разработки. Ни один не получен на сегодняшний день — отсортированы по приоритету."
       },
-      "table": { "priority": "Приоритет", "cert": "Сертификат", "why": "Почему" },
-      "row1": { "why": "Полностью бесплатный — очень признан в отрасли" },
-      "row2": { "why": "Бесплатный, очень полный, реальные проекты для портфолио" },
-      "row3": { "why": "Дополняет сертификаты Cisco в процессе" },
-      "row4": { "why": "Признание в сетевой безопасности, 100% бесплатно" }
+      "table": {
+        "priority": "Приоритет",
+        "cert": "Сертификат",
+        "why": "Почему"
+      },
+      "row1": {
+        "why": "Полностью бесплатный — очень признан в отрасли"
+      },
+      "row2": {
+        "why": "Бесплатный, очень полный, реальные проекты для портфолио"
+      },
+      "row3": {
+        "why": "Дополняет сертификаты Cisco в процессе"
+      },
+      "row4": {
+        "why": "Признание в сетевой безопасности, 100% бесплатно"
+      }
     },
     "trust": {
       "eyebrow": "Почему стоит доверять мне",
       "heading": "Системно-ориентированный подход.",
-      "pillar1": { "title": "Архитектура", "desc": "Строить на прочном фундаменте." },
-      "pillar2": { "title": "Надежность", "desc": "Учитывать реальные случаи и полевые ограничения." },
-      "pillar3": { "title": "Безопасность", "desc": "Интегрировать безопасность с этапа проектирования." },
-      "pillar4": { "title": "Масштабируемость", "desc": "Создавать решения, способные развиваться." }
+      "pillar1": {
+        "title": "Архитектура",
+        "desc": "Строить на прочном фундаменте."
+      },
+      "pillar2": {
+        "title": "Надежность",
+        "desc": "Учитывать реальные случаи и полевые ограничения."
+      },
+      "pillar3": {
+        "title": "Безопасность",
+        "desc": "Интегрировать безопасность с этапа проектирования."
+      },
+      "pillar4": {
+        "title": "Масштабируемость",
+        "desc": "Создавать решения, способные развиваться."
+      }
     },
     "gallery": {
       "eyebrow": "Галерея",
       "heading": "Некоторые из моих визуальных работ.",
       "lead": "Подборка изображений, иллюстрирующих мои проекты, интерфейсы и достижения.",
-      "tag": { "architecture": "Архитектура" },
-      "desc": { "architecture": "Схема архитектуры систем" },
+      "tag": {
+        "architecture": "Архитектура"
+      },
+      "desc": {
+        "architecture": "Схема архитектуры систем"
+      },
       "note": "Добавьте свои изображения в папку",
       "items": [
         {
@@ -1199,8 +1758,17 @@
       "phone_label": "Телефон",
       "location_label": "Местоположение",
       "location": "Банги, Центральноафриканская Республика",
-      "form": { "name": "Имя", "email": "Email", "subject": "Тема", "message": "Сообщение", "submit": "Отправить сообщение" }
+      "form": {
+        "name": "Имя",
+        "email": "Email",
+        "subject": "Тема",
+        "message": "Сообщение",
+        "submit": "Отправить сообщение"
+      }
     },
-    "footer": { "title": "Full-Stack разработчик и архитектор цифровых решений", "tagline": "Строить. Защищать. Развивать." }
+    "footer": {
+      "title": "Full-Stack разработчик и архитектор цифровых решений",
+      "tagline": "Строить. Защищать. Развивать."
+    }
   }
 }

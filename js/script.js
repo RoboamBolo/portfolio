@@ -378,27 +378,37 @@ function getSiteData() {
 // ============================================================
 
 /**
+ * Échappe le HTML d'un texte
+ */
+function escapeProjectText(v) {
+    return String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/**
  * Récupère la liste des projets pour la langue courante
+ * Accepte un tableau ou un objet { sifgc: {...}, sina: {...} }
  */
 function getProjects() {
     try {
         const data = getSiteData();
         if (!data) return [];
-        
+
         const lang = document.documentElement.lang || 'fr';
-        let projects = data?.[lang]?.projects || data?.fr?.projects || [];
-        
-        // Si projects est un objet, le convertir en tableau
-        if (projects && typeof projects === 'object' && !Array.isArray(projects)) {
-            projects = Object.values(projects).filter(p => p.title && p.description);
-        }
-        
-        // Filtrer les projets valides
-        if (Array.isArray(projects)) {
-            projects = projects.filter(p => p.title && p.description);
-        }
-        
-        return projects;
+        const raw = data?.[lang]?.projects || data?.fr?.projects || [];
+        const tbd = raw?.status?.tbd || '';
+        const list = Array.isArray(raw) ? raw : Object.values(raw);
+
+        return list
+            .filter(p => p && typeof p === 'object' && p.title)
+            .map(p => ({
+                ...p,
+                description: p.description || p.solution || p.problem || p.context || '',
+                features: p.features || Object.keys(p)
+                    .filter(k => /^feature\d+$/.test(k))
+                    .sort()
+                    .map(k => p[k]),
+                statusLabel: typeof p.status === 'string' ? p.status : tbd
+            }));
     } catch (e) {
         console.warn('Erreur getProjects:', e);
         return [];
@@ -406,7 +416,7 @@ function getProjects() {
 }
 
 /**
- * Affiche les projets dans le grid - Version avec images et métriques
+ * Affiche les projets dans la grille
  */
 function renderProjects() {
     const grid = document.getElementById('projects-grid');
@@ -418,175 +428,25 @@ function renderProjects() {
     const projects = getProjects();
     console.log('📁 Projets à afficher:', projects.length);
 
-    // Vider le contenu existant
-    grid.innerHTML = '';
-
-    if (!projects || projects.length === 0) {
-        grid.innerHTML = `
-            <div style="text-align:center; padding:4rem 0; grid-column:1/-1;">
-                <div style="display:inline-block; padding:3rem 4rem; background:rgba(255,255,255,0.03); border-radius:16px; border:1px dashed rgba(255,255,255,0.1); max-width:500px;">
-                    <div style="font-size:3rem; margin-bottom:1rem;">🚧</div>
-                    <h3 style="font-size:1.2rem; color:#aaa; margin-bottom:0.5rem;">Projets en cours de construction</h3>
-                    <p style="color:#666; font-size:0.95rem; line-height:1.6;">Je travaille actuellement sur des projets passionnants. Revenez bientôt !</p>
-                </div>
-            </div>
-        `;
+    if (projects.length === 0) {
+        grid.innerHTML = '<p class="project-empty">Projets en cours de construction.</p>';
         return;
     }
 
-    // Style du grid
-    grid.style.display = 'grid';
-    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(340px, 1fr))';
-    grid.style.gap = '2rem';
-    grid.style.marginTop = '2.5rem';
-    grid.style.padding = '0.5rem';
-
-    // Générer les cartes avec images
-    grid.innerHTML = projects.map((p, i) => {
-        // Déterminer la couleur du statut
-        const status = p.status || 'En développement';
-        const statusColor = status === 'Terminé' ? '#4caf50' : 
-                           status === 'En production' ? '#2196f3' : 
-                           status === 'En développement' ? '#ff9800' : '#888';
-        
-        // Vérifier si l'image existe
-        const hasImage = p.image && p.image !== '';
-        
+    grid.innerHTML = projects.map(p => {
+        const chips = (p.technologies || p.tags || p.features || []);
+        const metrics = p.metrics && Object.keys(p.metrics).length > 0 ? p.metrics : null;
         return `
-            <div class="project-card" style="
-                background: rgba(255,255,255,0.03);
-                border-radius: 16px;
-                overflow: hidden;
-                border: 1px solid rgba(255,255,255,0.06);
-                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                animation: fadeInUp 0.6s ease ${i * 0.12}s both;
-                display: flex;
-                flex-direction: column;
-            "
-            onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 12px 40px rgba(0,0,0,0.3)'; this.style.borderColor='rgba(100,200,255,0.15)';"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.borderColor='rgba(255,255,255,0.06)';"
-            >
-                <!-- Image du projet -->
-                <div style="
-                    width:100%;
-                    height:200px;
-                    background: linear-gradient(135deg, #1a1a2e, #16213e);
-                    overflow:hidden;
-                    position:relative;
-                    flex-shrink: 0;
-                ">
-                    ${hasImage ? `
-                        <img src="${p.image}" 
-                             alt="${p.title}" 
-                             style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;"
-                             loading="lazy"
-                             onerror="this.parentElement.innerHTML='<div style=\\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem;background:linear-gradient(135deg,#1a1a2e,#16213e);\\'>${p.icon || '📁'}</div>'"
-                             onmouseover="if(this.parentElement.querySelector('img')) this.style.transform='scale(1.05)'"
-                             onmouseout="if(this.parentElement.querySelector('img')) this.style.transform='scale(1)'"
-                        >
-                    ` : `
-                        <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem;background:linear-gradient(135deg,#1a1a2e,#16213e);">
-                            ${p.icon || '📁'}
-                        </div>
-                    `}
-                    
-                    <!-- Badge de statut -->
-                    <span style="
-                        position:absolute;
-                        top:12px;
-                        right:12px;
-                        padding:3px 14px;
-                        background: ${statusColor}22;
-                        color: ${statusColor};
-                        border-radius:20px;
-                        font-size:0.6rem;
-                        font-weight:500;
-                        text-transform:uppercase;
-                        letter-spacing:0.5px;
-                        border:1px solid ${statusColor}33;
-                        backdrop-filter:blur(10px);
-                        -webkit-backdrop-filter:blur(10px);
-                    ">${status}</span>
-                </div>
-
-                <!-- Contenu -->
-                <div style="
-                    padding:1.5rem;
-                    flex:1;
-                    display:flex;
-                    flex-direction:column;
-                    gap:0.5rem;
-                ">
-                    <!-- Titre -->
-                    <h3 style="
-                        color:#fff;
-                        font-size:1.1rem;
-                        font-weight:600;
-                        margin:0;
-                        line-height:1.3;
-                        letter-spacing:-0.2px;
-                    ">${p.title}</h3>
-
-                    <!-- Description -->
-                    <p style="
-                        color:#999;
-                        font-size:0.9rem;
-                        line-height:1.6;
-                        margin:0 0 0.5rem 0;
-                        flex:1;
-                    ">${p.description}</p>
-
-                    <!-- Technologies -->
-                    ${(p.technologies || p.tags) ? `
-                        <div style="
-                            display:flex;
-                            gap:0.5rem;
-                            flex-wrap:wrap;
-                            margin-top:0.2rem;
-                            padding-top:0.8rem;
-                            border-top:1px solid rgba(255,255,255,0.04);
-                        ">
-                            ${(p.technologies || p.tags || []).map(t => 
-                                `<span style="
-                                    padding:3px 14px;
-                                    background:rgba(100,200,255,0.06);
-                                    border-radius:20px;
-                                    font-size:0.7rem;
-                                    color:#8ab4f8;
-                                    border:1px solid rgba(100,200,255,0.06);
-                                    font-weight:400;
-                                    letter-spacing:0.2px;
-                                    transition: all 0.3s ease;
-                                "
-                                onmouseover="this.style.background='rgba(100,200,255,0.15)'; this.style.transform='scale(1.05)';"
-                                onmouseout="this.style.background='rgba(100,200,255,0.06)'; this.style.transform='scale(1)';"
-                                >${t}</span>`
-                            ).join('')}
-                        </div>
-                    ` : ''}
-
-                    <!-- Métriques -->
-                    ${p.metrics && Object.keys(p.metrics).length > 0 ? `
-                        <div style="
-                            display:grid;
-                            grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
-                            gap:0.8rem;
-                            margin-top:0.5rem;
-                            padding-top:0.8rem;
-                            border-top:1px solid rgba(255,255,255,0.04);
-                        ">
-                            ${Object.entries(p.metrics).map(([key, value]) => `
-                                <div style="text-align:center;">
-                                    <div style="color:#fff; font-size:1rem; font-weight:600;">${value}</div>
-                                    <div style="color:#666; font-size:0.55rem; text-transform:uppercase; letter-spacing:0.5px; margin-top:2px;">${key}</div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    ` : ''}
-                </div>
-            </div>
-        `;
-    }).join();
+            <article class="project-card">
+                ${p.image ? `<img class="project-image" src="${escapeProjectText(p.image)}" alt="${escapeProjectText(p.title)}" loading="lazy" onerror="this.remove()">` : ''}
+                ${p.eyebrow ? `<span class="project-eyebrow">${escapeProjectText(p.eyebrow)}</span>` : ''}
+                <h3 class="project-title">${escapeProjectText(p.title)}</h3>
+                <p class="project-desc">${escapeProjectText(p.description)}</p>
+                ${chips.length ? `<div class="project-techs">${chips.map(t => `<span>${escapeProjectText(t)}</span>`).join('')}</div>` : ''}
+                ${p.link ? `<a class="project-link" href="${escapeProjectText(p.link)}" target="_blank" rel="noopener noreferrer">GitHub →</a>` : ''}
+                ${metrics ? `<div class="project-metrics">${Object.entries(metrics).map(([k, v]) => `<div><div class="metric-value">${escapeProjectText(v)}</div><div class="metric-label">${escapeProjectText(k)}</div></div>`).join('')}</div>` : ''}
+            </article>`;
+    }).join('');
 
     console.log('✅ Projets affichés avec succès !');
 }

@@ -2284,3 +2284,32 @@ h1, h2, h3, h4, p {
     gap: 0.5rem;
   }
 }
+/* Projets : image et type */
+.project-card .project-image {
+  width: calc(100% + 3.6rem);
+  margin: -1.8rem -1.8rem 0.4rem;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.project-card .project-eyebrow {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+}
+.project-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.project-card .project-link {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.project-card .project-link:hover {
+  text-decoration: underline;
+}
